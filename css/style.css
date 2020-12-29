@@ -323,7 +323,6 @@ ul {
     min-height: 660px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
-      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
       opacity: .5;
       height: 125%;
       position: absolute;
@@ -2740,7 +2739,6 @@ h6 {
   color: #33353b; }
 
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none; }
 
 .confirm-checkbox {
@@ -2774,7 +2772,6 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none; }
 
 .disabled-checkbox {
@@ -2812,7 +2809,6 @@ h6 {
   z-index: 3; }
 
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none; }
 
 .primary-radio {
@@ -2846,7 +2842,6 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none; }
 
 .confirm-radio {
@@ -2879,7 +2874,9 @@ h6 {
   cursor: pointer;
   border: 1px solid #f1f1f1; }
 
-
+.confirm-radio input:checked + label {
+  background: url(../src/images/banner.jpg) no-repeat center center/cover;
+  border: none; }
 
 .disabled-radio {
   width: 16px;
@@ -2925,7 +2922,6 @@ h6 {
   padding: 0px; }
 
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none; }
 
 .default-select {

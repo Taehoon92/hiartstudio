@@ -1,22 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
+import '../../css/default.css'
+import '../../css/fonts.css'
+import '../../css/style.css'
+import '../../css/responsive.css'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+export default function Home() {
+  return (
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Hi Art Studio</title>
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+		<link> rel="stylesheet" href="../../css/newStyle.css" </link> 
 
-export default IndexPage
+
+		<link> rel="stylesheet" href="../../css/bootstrap.css" </link> 
+		<link> rel="stylesheet" href="vendors/fontawesome/css/all.min.css" </link> 
+		<link> rel="stylesheet" href="vendors/animate-css/animate.css" </link>
+		<link> rel="stylesheet" href="vendors/popup/magnific-popup.css" </link>
+
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+		
+		<link> rel="stylesheet" href="../../css/default.css" </link>
+		<link> rel="stylesheet" href="../../css/fonts.css" </link>
+		<link> rel="stylesheet" href="../../css/style.css" </link>
+		<link> rel="stylesheet" href="../../css/responsive.css" </link> 
+	</head>,
+
+	<body>
+		<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">Hi Art Studio</a></h1>
+			</div>
+		</div>
+		</div>	
+	</body>
+  )
+}
