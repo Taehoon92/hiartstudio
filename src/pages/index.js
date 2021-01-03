@@ -1,8 +1,12 @@
 import React from "react"
+import {Link} from "gatsby"
 
-import '../../css/jstyle.css'
+import '../../css/newStyle.css'
 import '../../css/bootstrap.css'
+import '../../css/responsive.css'
 
+import '../../vendors/animate-css/animate.css'
+import '../../vendors/popup/magnific-popup.css'
 
 export default function Home() {
   return (
@@ -33,10 +37,19 @@ export default function Home() {
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto mr-auto active">
 								<li class="nav-item active"><a class="nav-link" href="#">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>    
-								<li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>   
+
+								<li class="nav-item submenu dropdown">
+									<a href="/about/" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Studio</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Cirriciulum</a></li>
+									</ul>
+								</li>
+									
+								<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>    
+								<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+								<li class="nav-item"><a class="nav-link" href="#contact_us">Contact us</a></li>   
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Makeup Lesson</a>
 									<ul class="dropdown-menu">
@@ -51,6 +64,17 @@ export default function Home() {
 				</nav>
 			</div>
 		</header>
+
+		<div id="page-wrapper">
+			<div id="welcome" class="container">
+				<div class="title">
+					<h2>Welcome to our website</h2>
+				</div>
+				<p>We are located at 5 Saville St. Eight Mile Plains QLD 4113</p>
+			</div>
+		</div>
+
+
 
 	</body>
   )

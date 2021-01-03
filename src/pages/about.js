@@ -1,4 +1,5 @@
 import React from "react"
+import '../../css/newStyle.css'
 
 export default function About() {
   return (

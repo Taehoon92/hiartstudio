@@ -1,6 +1,158 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #334467;
+    font-family: 'Questrial', sans-serif;
+    font-size: 12pt;
+    color: #E5EEFF;
+}
+
+
+h1, h3
+{
+    margin: 0;
+    padding: 0;
+    color: #404040;
+}
+
+h2
+{
+    margin: 0;
+    padding: 0;
+    color: #404040;
+    font-size: 12pt;
+}
+
+p, ol, ul
+{
+    margin-top: 0;
+}
+
+ol, ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+p
+{
+    line-height: 180%;
+    color: azure;
+}
+
+strong
+{
+}
+
+a
+{
+    color: #16A085;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+.container
+{
+    margin: 0px auto;
+    
+}
+
+.title {
+  margin-bottom: 3em;
+}
+
 
 /*********************************************************************************/
-/* Menu                                                                          */
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper
+{
+    overflow: hidden;
+    padding: 6em 0em 2em 0em;
+}
+
+#header
+{
+    text-align: center;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+}
+
+#logo h1
+{
+    display: inline-block;
+    margin-bottom: 0.20em;
+    padding: 0.20em 0.9em;
+    font-size: 3.5em;
+}
+
+#logo a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#logo span
+{
+    padding-right: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.90em;
+    color: rgba(255,255,255,1);
+}
+
+#logo span a
+{
+    color: rgba(255,255,255,0.8);
+}
+
+/*********************************************************************************/
+/* font                                                                         */
+/*********************************************************************************/
+
+@font-face
+{
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=3.0.1');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	     url('fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	     url('fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype'),
+	     url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Font-Awesome-Social';
+	src: url('fonts/fontawesome-social-webfont.eot');
+	src: url('fonts/fontawesome-social-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/fontawesome-social-webfont.woff') format('woff'),
+		 url('fonts/fontawesome-social-webfont.ttf') format('truetype'),
+		 url('fonts/fontawesome-social-webfont.svg#Font-Awesome-More') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*********************************************************************************/
+/* menu                                                                        */
 /*********************************************************************************/
 
 #menu
@@ -49,6 +201,14 @@
 
 #menu .container {
     background:#334467;
+}
+
+
+
+#welcome .title h2
+{
+    color: #FFF;
+    text-align: center;
 }
 
 /* =================================== */
@@ -356,3 +516,14 @@
   body.mobile-nav-active #mobile-nav-toggle {
     color: #fff; }
   
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#page-wrapper
+{
+  overflow: hidden;
+  padding: 3em 0em 0em 0em;
+  text-align: center;
+}
