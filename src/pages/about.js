@@ -10,11 +10,12 @@ export default function About() {
 
       <Header />
 
-
-      <div class="aboutimage">
+      <div>
         <h1 class="text container">
-          About Us
+          About us
         </h1>
+        <div class="aboutimage">
+        </div>
       </div>
 
       
