@@ -566,23 +566,37 @@ a:hover
 }
 
 
-
+.aboutimage{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  overflow: hidden;
+}
 
 .aboutimage h1{
   z-index: 2;
   position: absolute;
-  text-align: center;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 20px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.aboutimage p{
+  z-index: 2;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 20px;
+  max-width: 100%;
+  vertical-align: middle;
+
 }
 
 .aboutimage img {
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-width: 100%;
   position: relative;
-}
-
-.aboutimage .text {
-  text-align: center;
-  color: white;
-  background-color: rgba(0,0,0,0.5);
+  
 }

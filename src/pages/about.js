@@ -11,11 +11,12 @@ export default function About() {
       <Header />
 
       <div class="aboutimage">
-        <h1 class="text container">About us</h1>
-        <img src="https://i.redd.it/9wn4rylie1v31.png" />
-      </div>
-      
+        <h1 class="container">About us</h1>
+        <p class="container">Short Paragraph Here</p>
+        
 
+        <img src="https://cdn.decoist.com/wp-content/uploads/2017/04/Art-studio-with-a-desk-in-the-center-of-the-room-.jpeg" />
+      </div>
 
       <div class="about-box">
 
