@@ -21,6 +21,17 @@ export default function About() {
       
 
 
+      <div class="about-box">
+
+      </div>
+      <div class="about-box"></div>
+      <div class="about-box"></div>
+
+
+
+      
+
+
     </div>
   )
 }
