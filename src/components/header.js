@@ -4,7 +4,6 @@ import React from "react"
 
 import '../../css/newStyle.css'
 
-
 const Header = ({ siteTitle }) => (
   <header id="header" className="header_area">
     <div id="menu" className="main_menu">

@@ -540,6 +540,7 @@ a:hover
   text-align: center;
 }
 
+
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
@@ -613,4 +614,16 @@ a:hover
 
 .test {
   height:200px;
+}
+
+/*faq accordian font*/
+
+.accordianfont{
+  text-align: left !important;
+  padding-top: 40px;
+}
+
+.accordianquestion{
+  font-size: larger;
+  font-weight: bold;
 }
