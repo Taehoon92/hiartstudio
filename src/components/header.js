@@ -8,46 +8,26 @@ import '../../css/newStyle.css'
 const Header = ({ siteTitle }) => (
   <header id="header" className="header_area">
     <div id="menu" className="main_menu">
-      <div id="logo">
-        <Link to ="/">
+      <nav className="navbar navbar-expand-md fixed-top">
+        <a className="logo navbar-brand logo" href="/">
           <img src='../../logo.png' />
-        </Link>
-      </div>
-        <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
+        </a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-                <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-                    <ul className="nav navbar-nav menu_nav ml-auto mr-auto active">
-                        <li className="nav-item submenu dropdown">
-                          <a href="/about/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                          <ul className="dropdown-menu">
-                            <li className="nav-item"><a className="nav-link" href="#">Teachers</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#">Studio</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#">Curriciulum</a></li>
-                          </ul>
-                        </li>
-                        <li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>    
-                        <li className="nav-item"><a className="nav-link" href="/faq">FAQ</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">Contact us</a></li>   
-                        <li className="nav-item submenu dropdown">
-                            <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Makeup Lesson</a>
-                            <ul className="dropdown-menu">
-                                <li className="nav-item"><a className="nav-link" href="#">Blog</a></li>
-                                <li className="nav-item"><a className="nav-link" href="#">Blog Details</a></li>
-                            </ul>
-                        </li>
-  
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>  
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            </li>
+          </ul>
 
+
+        </div>
+
+      </nav>
+    </div>
   </header>
 )
 

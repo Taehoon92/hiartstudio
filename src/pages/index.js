@@ -3,7 +3,8 @@ import {Link} from "gatsby"
 import Layout from "../components/layout"
 
 import '../../css/newStyle.css'
-import '../../css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import '../../css/responsive.css'
 
 import '../../vendors/animate-css/animate.css'
