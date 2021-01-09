@@ -28,11 +28,11 @@ const Header = ({ siteTitle }) => (
                           <ul className="dropdown-menu">
                             <li className="nav-item"><a className="nav-link" href="#">Teachers</a></li>
                             <li className="nav-item"><a className="nav-link" href="#">Studio</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#">Cirriciulum</a></li>
+                            <li className="nav-item"><a className="nav-link" href="#">Curriciulum</a></li>
                           </ul>
                         </li>
                         <li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>    
-                        <li className="nav-item"><a className="nav-link" href="#">FAQ</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/faq">FAQ</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">Contact us</a></li>   
                         <li className="nav-item submenu dropdown">
                             <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Makeup Lesson</a>

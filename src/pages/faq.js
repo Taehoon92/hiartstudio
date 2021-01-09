@@ -3,7 +3,7 @@ import '../../css/newStyle.css'
 import Header from "../components/header"
 
 
-export default function About() {
+export default function faq() {
   return (
     <div id="page-wrapper">
 
@@ -12,18 +12,14 @@ export default function About() {
 
       <div class="about-image">
         <div class = "about-text">
-          <h1 class="container">About us</h1>
+          <h1 class="container">Frequently Asked Questions</h1>
           <p class="container">Short Paragraph Here</p>
         </div>
         <img src="https://cdn.decoist.com/wp-content/uploads/2017/04/Art-studio-with-a-desk-in-the-center-of-the-room-.jpeg" />
       </div>
 
-      <div class = "col-md-12">
-        <div class="about-box col-md-3 ">
-          <div class="test"></div>
-        </div>  
-        <div class="col-md-3 about-box"></div>  
-        <div class="col-md-3 about-box"></div>  
+      <div class = "col">
+
       </div>
     </div>
   )
