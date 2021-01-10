@@ -3919,3 +3919,101 @@ a:hover
     color: #fff; }
   
 
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#page-wrapper
+{
+  overflow: hidden;
+  padding: 3em 0em 0em 0em;
+  text-align: center;
+}
+
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#aboutbanner{
+  border: none;
+  margin: 0 auto;
+  padding: 16px 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+#background--image-canvas {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.about-image{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.about-image h1{
+  z-index: 2;
+  color: white;
+  padding-top: 20px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.about-image p{
+  z-index: 2;
+  color: white;
+  padding-top: 20px;
+  max-width: 100%;
+  vertical-align: middle;
+
+}
+
+.about-image img {
+  z-index: 1;
+  max-width: 100%;
+  position: relative;
+}
+
+.about-text {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  width: 100%;
+  height:300px;
+  vertical-align: middle;
+}
+
+/*about box*/
+.about-box{
+
+  margin: 20px 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+.test {
+  height:200px;
+}
+
+/*faq accordian font*/
+
+.accordianfont{
+  text-align: left !important;
+  padding-top: 40px;
+}
+
+.accordianquestion{
+  font-size: larger;
+  font-weight: bold;
+}

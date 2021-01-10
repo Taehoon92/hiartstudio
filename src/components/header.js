@@ -7,7 +7,6 @@ import {Navbar, Nav, NavDropdown}  from 'react-bootstrap';
 import '../../css/style.css'
 //import '../../css/newStyle.css'
 
-
 const Header = ({ siteTitle }) => (
   <header id="header" className="header_area">
     <div id="menu" className="main_menu">
