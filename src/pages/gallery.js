@@ -1,5 +1,5 @@
 import React from "react"
-import '../../css/newStyle.css'
+import '../../css/style.css'
 import Header from "../components/header"
 
 
@@ -10,8 +10,8 @@ export default function Gallery() {
 
       <Header />
 
-      <div class="about-image">
-        <div class = "about-text">
+      <div class="banner-image">
+        <div class = "banner-text">
           <h1 class="container">Gallery</h1>
           <p class="container">Take a peek at our proud students' works</p>
           <p class="container">Click on the image to enlarge</p>
