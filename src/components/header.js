@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
             </NavDropdown>
             <Nav.Link href="/">Portfolio</Nav.Link>
             <Nav.Link href="/faq">FAQ</Nav.Link>
-            <Nav.Link href="/">Contact Us</Nav.Link>
+            <Nav.Link href="/contactus">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

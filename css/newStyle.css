@@ -3998,8 +3998,28 @@ a:hover
 .about-box{
 
   margin: 20px 20px;
-  background-color: white;
+  background-color:#334467;
   display: inline-block;
+}
+
+.contact-box{
+
+  margin: 10px 5px;
+  background-color:#334467;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  position: relative;
+}
+
+.contact-box h3{
+  color: #E5EEFF !important;
+  text-align: left !important;
+  font-size: larger !important;
+}
+
+.contact-box p{
+  color: #E5EEFF !important;
+  text-align: left !important;
 }
 
 .test {
@@ -4016,4 +4036,5 @@ a:hover
 .accordianquestion{
   font-size: larger;
   font-weight: bold;
+  color: #2a2a2a !important;
 }
