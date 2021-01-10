@@ -91,6 +91,20 @@
   text-align: left !important;
 }
 
+.gallery-box{
+  margin: 10px 5px;
+  background-color:#334467;
+  display: inline-block;
+  height: 400px;
+
+}
+
+.gallery-image{
+  max-height: 350px;
+  min-width: 200px;
+  padding-top: 10px;
+}
+
 /*faq accordian font*/
 .accordianfont{
   text-align: left !important;

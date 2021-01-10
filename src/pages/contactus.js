@@ -21,7 +21,7 @@ export default function Contactus() {
       <div class = "col">
 
         <div class="contact-box col-md-4 ">
-        
+            <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/69996523_2115980488502800_2822794296686542848_n.jpg?_nc_cat=100&ccb=2&_nc_sid=8bfeb9&_nc_ohc=mXSCFdKIvT4AX_m-cgk&_nc_ht=scontent-syd2-1.xx&oh=8cedab965948fa65c4772944914b9a70&oe=601F7550" />
         </div>  
 
 
