@@ -67,6 +67,9 @@
   vertical-align: middle;
 }
 
+.row {
+  display:inline-block;
+}
 
 /*about box*/
 .about-box{
