@@ -1,6 +1,8 @@
 import React from "react"
 import {Link} from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/header"
+
 
 import '../../css/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -9,7 +11,11 @@ import '../../vendors/animate-css/animate.css'
 import '../../vendors/popup/magnific-popup.css'
 
 const IndexPage = () => (
-	<Layout header="home">
+	<div className="index">
+		<div className="title">
+			<img src='../../logo.png' className="index-image"/>
+		</div>
+		<Header />
 		<div id="page-wrapper">
 			<div id="welcome" className="container">
 				<div className="title">
@@ -51,7 +57,7 @@ const IndexPage = () => (
 					Felis eget velit aliquet sagittis id. Sed risus ultricies tristique nulla. Vitae suscipit tellus mauris a diam. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Amet facilisis magna etiam tempor orci. At varius vel pharetra vel turpis nunc eget lorem dolor. Eu volutpat odio facilisis mauris sit amet. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Blandit turpis cursus in hac habitasse platea. Sapien faucibus et molestie ac. Purus non enim praesent elementum facilisis leo vel. Justo laoreet sit amet cursus sit amet dictum sit amet. Sit amet mattis vulputate enim nulla aliquet porttitor. Sagittis orci a scelerisque purus semper eget duis at. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Arcu cursus vitae congue mauris rhoncus.</p>
 			</div>
 		</div>
-	</Layout>
+	</div>
 );
 
 export default IndexPage;

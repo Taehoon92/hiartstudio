@@ -2,8 +2,24 @@
 #page-wrapper
 {
   overflow: hidden;
-  padding: 3em 0em 0em 0em;
+  padding: 0em 1em 0em 1em;
   text-align: center;
+}
+
+/*Index Page*/
+.index {
+  background-color:#334467;
+}
+
+.title {
+  text-align:center;
+}
+
+.index-image {
+  width:80%;
+  text-align:center;
+  padding-top:100px;
+  padding-bottom:50px;
 }
 
 /*banner*/
@@ -87,17 +103,23 @@
   color: #2a2a2a !important;
 }
 
+/* Nav Bar */
+.navbar {
+  background-color:#2a2a2a !important;
+}
+
+.navbar img {
+  margin-bottom:0px;
+}
+
+.nav-link{
+  color:red !important;
+}
+
 /* Logo */
 .logo {
-  width:15%;
+  width:150px;
   height:auto;
 }
-
-/* Nav Bar */
-.header_area .navbar {
-  position : relative;
-}
-
-
 
 
