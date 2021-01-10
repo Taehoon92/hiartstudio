@@ -79,12 +79,14 @@
   margin: 10px 5px;
   background-color:#334467;
   display: inline-block;
-  position: relative;
   height: 400px;
+
 }
 
 .gallery-image{
   max-height: 350px;
+  min-width: 200px;
+  padding-top: 10px;
 }
 
 /*faq accordian font*/
