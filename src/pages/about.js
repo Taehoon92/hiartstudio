@@ -1,5 +1,7 @@
 import React from "react"
-import '../../css/newStyle.css'
+//import '../../css/newStyle.css'
+import '../../css/style.css'
+
 import Header from "../components/header"
 
 

@@ -4,14 +4,14 @@ import React from "react"
 
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap';
 
-
-import '../../css/newStyle.css'
+import '../../css/style.css'
+//import '../../css/newStyle.css'
 
 
 const Header = ({ siteTitle }) => (
   <header id="header" className="header_area">
     <div id="menu" className="main_menu">
-      <Navbar collapseOnSelect expand="lg" bg="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top">
         <Navbar.Brand href="/" className="logo">
           <img
             src='../../logo.png'
@@ -27,9 +27,9 @@ const Header = ({ siteTitle }) => (
               <NavDropdown.Item href="#">Studio</NavDropdown.Item>
               <NavDropdown.Item href="#">Curriciulum</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#">Portfolio</Nav.Link>
+            <Nav.Link href="/">Portfolio</Nav.Link>
             <Nav.Link href="/faq">FAQ</Nav.Link>
-            <Nav.Link href="#">Contact Us</Nav.Link>
+            <Nav.Link href="/">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

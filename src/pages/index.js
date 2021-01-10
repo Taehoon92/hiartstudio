@@ -2,10 +2,9 @@ import React from "react"
 import {Link} from "gatsby"
 import Layout from "../components/layout"
 
-import '../../css/newStyle.css'
+//import '../../css/newStyle.css'
+import '../../css/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-import '../../css/responsive.css'
 
 import '../../vendors/animate-css/animate.css'
 import '../../vendors/popup/magnific-popup.css'
