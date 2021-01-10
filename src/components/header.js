@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
               <NavDropdown.Item href="#">Studio</NavDropdown.Item>
               <NavDropdown.Item href="#">Curriciulum</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/">Portfolio</Nav.Link>
+            <Nav.Link href="/gallery">Portfolio</Nav.Link>
             <Nav.Link href="/faq">FAQ</Nav.Link>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
           </Nav>
