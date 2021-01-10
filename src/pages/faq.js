@@ -7,6 +7,7 @@ import {Card, Button, Accordion}  from 'react-bootstrap';
 
 export default function faq() {
   return (
+    
     <div>
       <Header />
       <div id="page-wrapper">
@@ -17,20 +18,19 @@ export default function faq() {
           />
         </head>
 
-        <div classNameName="banner-image">
-          <div classNameName = "banner-text">
-            <h1 classNameName="container">Frequently Asked Questions</h1>
-            <h2 classNameName="container">How can we help you?</h2>
+        <div className="banner-image">
+          <div className = "banner-text">
+            <h1 className="container">Frequently Asked Questions</h1>
+            <h2 className="container">How can we help you?</h2>
           </div>
           <img src="https://cdn.decoist.com/wp-content/uploads/2017/04/Art-studio-with-a-desk-in-the-center-of-the-room-.jpeg" />
         </div>
-        
+      
 
-
-        <div classNameName ="container accordianfont">
+        <div className ="container accordianfont">
           <Accordion defaultActiveKey="0">
 
-            <Card className="accordianfont">
+            <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> What happens if I miss a className? </h2>
