@@ -17,7 +17,7 @@ const IndexPage = () => (
 		</div>
 		<Header />
 		<div id="page-wrapper">
-			<div id="welcome" className="container">
+			<div id="welcome" className="col-md-12">
 				<div className="title">
 					<h2>Welcome to our website</h2>
 				</div>
