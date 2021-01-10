@@ -9,20 +9,20 @@ export default function About() {
     <div>
       <Header />
       <div id="page-wrapper">
-        <div class="banner-image">
-          <div class = "banner-text">
-            <h1 class="container">About us</h1>
-            <p class="container">Short Paragraph Here</p>
+        <div className="banner-image">
+          <div className = "banner-text">
+            <h1 className="container">About us</h1>
+            <p className="container">Short Paragraph Here</p>
           </div>
           <img src="https://cdn.decoist.com/wp-content/uploads/2017/04/Art-studio-with-a-desk-in-the-center-of-the-room-.jpeg" />
         </div>
 
-        <div class = "col-md-12">
-          <div class="about-box col-md-3 ">
-            <div class="test"></div>
+        <div className = "col-md-12">
+          <div className="about-box col-md-3 ">
+            <div className="test"></div>
           </div>  
-          <div class="col-md-3 about-box"></div>  
-          <div class="col-md-3 about-box"></div>  
+          <div className="col-md-3 about-box"></div>  
+          <div className="col-md-3 about-box"></div>  
         </div>
       </div>
     </div>
