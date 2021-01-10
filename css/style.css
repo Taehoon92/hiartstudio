@@ -9,6 +9,7 @@
 /*Index Page*/
 .index {
   background-color:#334467;
+  color:white;
 }
 
 .title {
@@ -20,6 +21,10 @@
   text-align:center;
   padding-top:100px;
   padding-bottom:50px;
+}
+
+#welcome {
+  padding-top:5em;
 }
 
 /*banner*/

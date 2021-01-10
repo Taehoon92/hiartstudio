@@ -7,8 +7,6 @@ import Header from "../components/header"
 export default function About() {
   return (
     <div>
-
-
       <Header />
       <div id="page-wrapper">
         <div class="banner-image">
