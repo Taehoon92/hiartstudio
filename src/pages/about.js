@@ -11,8 +11,8 @@ export default function About() {
 
       <Header />
 
-      <div class="about-image">
-        <div class = "about-text">
+      <div class="banner-image">
+        <div class = "banner-text">
           <h1 class="container">About us</h1>
           <p class="container">Short Paragraph Here</p>
         </div>

@@ -19,8 +19,8 @@ export default function faq() {
         />
       </head>
 
-      <div className="about-image">
-        <div className = "about-text">
+      <div className="banner-image">
+        <div className = "banner-text">
           <h1 className="container">Frequently Asked Questions</h1>
           <h2 className="container">How can we help you?</h2>
         </div>
