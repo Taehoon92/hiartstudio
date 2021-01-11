@@ -142,9 +142,33 @@
 }
 
 .nav-link{
-  color:#00203FFF !important;
+  color:#00203F !important;
   font-weight: bold;
 }
+
+.dropdown-menu {
+  background-color : #d4f9e8 !important;
+}
+
+.dropdown-menu a:hover {
+  background-color : #adefd1  !important;
+}
+
+.dropdown-menu a:active, .dropdown-menu a:visited{
+  color :black  !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
+
+.navbar .nav-link:hover {
+  color: #285b8b  !important; 
+}
+
+
 
 /* Logo */
 .logo {

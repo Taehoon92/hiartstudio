@@ -19,10 +19,11 @@ const Header = ({ siteTitle }) => (
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">          
       <Nav className="ml-auto">
-        <NavDropdown title="About" id="collasible-nav-dropdown" href="/about">
-          <NavDropdown.Item href="#">Teachers</NavDropdown.Item>
-          <NavDropdown.Item href="#">Studio</NavDropdown.Item>
-          <NavDropdown.Item href="#">Curriciulum</NavDropdown.Item>
+        <NavDropdown title="About" id="collasible-nav-dropdown" href="/about" className="show">
+          <NavDropdown.Item href="/about">About</NavDropdown.Item>
+          <NavDropdown.Item href="about/teacher">Teachers</NavDropdown.Item>
+          <NavDropdown.Item href="about/studio">Studio</NavDropdown.Item>
+          <NavDropdown.Item href="about/curriciulum">Curriciulum</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link href="/gallery">Portfolio</Nav.Link>
         <Nav.Link href="/faq">FAQ</Nav.Link>
