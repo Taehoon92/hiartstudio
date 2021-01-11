@@ -13,7 +13,7 @@ import '../../vendors/popup/magnific-popup.css'
 const IndexPage = () => (
 	<div className="index">
 		<div className="title">
-			<img src='../../logo.png' className="index-image"/>
+			<img src='../../logo_b.png' className="index-image"/>
 		</div>
 		<Header />
 		<div id="page-wrapper">

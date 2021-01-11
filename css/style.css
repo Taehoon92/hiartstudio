@@ -3,13 +3,13 @@
 {
   overflow: hidden;
   text-align: center;
-  background-color:#334467;
+  background-color:white;
 }
 
 /*Index Page*/
 .index {
-  background-color:#334467;
-  color:white;
+  background-color:white;
+  color:black;
 }
 
 .title {
@@ -19,8 +19,8 @@
 .index-image {
   width:80%;
   text-align:center;
-  padding-top:100px;
-  padding-bottom:50px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 #welcome {
@@ -78,7 +78,7 @@
 .about-box{
 
   margin: 20px 20px;
-  background-color:#334467;
+  background-color:white;
   display: inline-block;
 }
 
@@ -92,19 +92,19 @@
 }
 
 .contact-box h3{
-  color: #334467 !important;
+  color: white !important;
   text-align: left !important;
   font-size: larger !important;
 }
 
 .contact-box p{
-  color: #334467 !important;
+  color: white !important;
   text-align: left !important;
 }
 
 .gallery-box{
   margin: 10px 0px;
-  background-color:#ADEFD1FF;
+  background-color:#fbfbfb;
   display: inline-block;
   height: 400px;
   border-style: solid;
@@ -133,7 +133,7 @@
 
 /* Nav Bar */
 .navbar {
-  background-color:#ADEFD1FF !important;
+  background-color:#fbfbfb !important;
 }
 
 .navbar img {
@@ -141,20 +141,21 @@
 }
 
 .nav-link{
-  color:#00203F !important;
+  color:black !important;
   font-weight: bold;
 }
 
 .dropdown-menu {
-  background-color : #d4f9e8 !important;
+  background-color : #fbfbfb !important;
 }
 
 .dropdown-menu a:hover {
-  background-color : #adefd1  !important;
+  background-color : #fbfbfb !important;
+  color : #1a50b4  !important;
 }
 
 .dropdown-menu a:active, .dropdown-menu a:visited{
-  color :black  !important;
+  color :#1a50b4  !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -164,7 +165,7 @@
 
 
 .navbar .nav-link:hover {
-  color: #285b8b  !important; 
+  color: #1a50b4  !important; 
 }
 
 

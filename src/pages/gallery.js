@@ -2,12 +2,39 @@ import React from "react"
 import '../../css/style.css'
 import Header from "../components/header"
 
+import { useStaticQuery, graphql } from "gatsby"
+import _get from "lodash/get"
+import Img from "gatsby-image"
+
 
 export default function Gallery() {
+
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    allInstagramContent {
+      edges {
+        node {
+          localImage {
+            url
+          }
+          caption
+          permalink
+        }
+      }
+    }
+  }`)
+
+  let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
+
+  console.log("test")
+  console.log(data)
+
+  console.log(data.allInstagramContent.edges[0].node.localImage.url)
+  
+
   return (
     <div id="page-wrapper">
-
-
+      
       <Header />
 
       <div className="banner-image">
@@ -25,10 +52,12 @@ export default function Gallery() {
       <div className="container">
 
       
-        <div className = "row">
+        <div className = "row"> 
 
           <div className="gallery-box col-4">
-              <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/s960x960/128096892_3153678894732949_1979257469722480982_o.jpg?_nc_cat=109&ccb=2&_nc_sid=8024bb&_nc_ohc=AkPxAO233X0AX8i_zZp&_nc_ht=scontent-syd2-1.xx&tp=7&oh=51fd93e16d62baa3f9ec729e65d32552&oe=6021327B" className="gallery-image" />
+            <a href={data.allInstagramContent.edges[0].node.permalink}> 
+              <img src={data.allInstagramContent.edges[0].node.localImage.url} />
+            </a>
           </div>  
 
 

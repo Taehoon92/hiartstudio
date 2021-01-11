@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})  
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -9,9 +13,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `images`,   
         path: `${__dirname}/src/images`,
       },
+      
+      
+      
+    },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJWek5kdnlrVUowclVnR0xtTjZAjc3oxRzMyMTBTUTNzTDhBNFZAOUTUyQWhsRG5DNzNOanVpc01TVjAwNnh1bUFRVHZAmQl9WWExYYk12Qy1GUnZAtZAEdldHF6M1F2Ul9la3hiakRUblBHUFhBT1kzUQZDZD",
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
