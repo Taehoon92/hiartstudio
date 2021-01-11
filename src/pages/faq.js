@@ -28,7 +28,7 @@ export default function faq() {
       
 
         <div className ="container accordianfont">
-          <Accordion defaultActiveKey="0">
+          <Accordion>
 
             <Card>
               <Card.Header>
@@ -76,6 +76,7 @@ export default function faq() {
             </Card>
 
           </Accordion>
+          
         </div>
       </div>
     </div>

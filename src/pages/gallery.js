@@ -62,17 +62,25 @@ export default function Gallery() {
 
 
           <div className="gallery-box col-4">
-              <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/60281435_1918302531603931_998723434127032320_o.jpg?_nc_cat=107&ccb=2&_nc_sid=8024bb&_nc_ohc=SLNRkLRxrxkAX9WetJb&_nc_ht=scontent-syd2-1.xx&oh=b061e2b87921342431d70598731fce15&oe=601F8978" className="gallery-image" />
+            <a href={data.allInstagramContent.edges[1].node.permalink}> 
+              <img src={data.allInstagramContent.edges[1].node.localImage.url} />
+            </a>
           </div>  
 
 
           <div className="gallery-box col-4">
-              <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/60281435_1918302531603931_998723434127032320_o.jpg?_nc_cat=107&ccb=2&_nc_sid=8024bb&_nc_ohc=SLNRkLRxrxkAX9WetJb&_nc_ht=scontent-syd2-1.xx&oh=b061e2b87921342431d70598731fce15&oe=601F8978" className="gallery-image" />
+            <a href={data.allInstagramContent.edges[2].node.permalink}> 
+              <img src={data.allInstagramContent.edges[2].node.localImage.url} />
+            </a>
           </div>  
 
           <div className="gallery-box col-4">
-              
-          </div>  
+            <a href={data.allInstagramContent.edges[3].node.permalink}> 
+              <img src={data.allInstagramContent.edges[3].node.localImage.url} />
+            </a>
+          </div>
+
+          
           
 
           

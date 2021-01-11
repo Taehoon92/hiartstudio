@@ -85,20 +85,20 @@
 .contact-box{
 
   margin: 10px 0px;
-  background-color:#ADEFD1FF;
+  background-color:#fbfbfb;
   display: inline-block;
   padding: 10px 10px 10px 10px;
   position: relative;
 }
 
 .contact-box h3{
-  color: white !important;
+  color: black !important;
   text-align: left !important;
   font-size: larger !important;
 }
 
 .contact-box p{
-  color: white !important;
+  color: black !important;
   text-align: left !important;
 }
 
