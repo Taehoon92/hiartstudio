@@ -42,7 +42,7 @@ export default function Gallery() {
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
 
   request("https://www.instagram.com/explore/tags/hooonstagram/?__a=1", query).then((data1)=>
-    console.log(JSON.stringify(data1,null,2))
+    console.log(data1)
   )
   
   return (
