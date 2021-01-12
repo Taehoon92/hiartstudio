@@ -4,6 +4,7 @@
   overflow: hidden;
   text-align: center;
   background-color:white;
+  margin-bottom: 80px;
 }
 
 /*Index Page*/
@@ -179,4 +180,40 @@
 
 .container{
   position: relative;
+}
+
+/* Footer */
+
+.footer-settings{
+  background-color: seashell;
+}
+
+hr.copyright {
+  border-top: 2px solid navajowhite;
+}
+
+div.copyright{
+  height: 50px;
+}
+
+p.copyright{
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-box{
+  margin-top: 50px;
+  display: inline-block;
+  height: 110px;
+}
+
+h1.footer-box-font{
+  font-size: x-large;
+
+  font-weight: bold;
+}
+
+p.footer-box-font{
+
+  font-weight: 300;
 }

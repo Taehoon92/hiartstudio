@@ -1,6 +1,7 @@
 import React from "react"
 import '../../css/style.css'
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
@@ -90,7 +91,7 @@ export default function Gallery() {
 
 
 
-      
+      <Footer />
     </div>
   )
 }

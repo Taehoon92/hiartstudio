@@ -1,6 +1,7 @@
 import React from "react"
 import '../../css/style.css'
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 import {Card, Button, Accordion}  from 'react-bootstrap';
 
@@ -79,6 +80,8 @@ export default function faq() {
           
         </div>
       </div>
+
+      <Footer />
     </div>
 
 

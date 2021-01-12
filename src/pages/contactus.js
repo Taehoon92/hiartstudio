@@ -1,6 +1,7 @@
 import React from "react"
 import '../../css/style.css'
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 
 export default function Contactus() {
@@ -42,6 +43,7 @@ export default function Contactus() {
         </div>
         
       </div>
+      <Footer />
     </div>
   )
 }

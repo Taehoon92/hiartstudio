@@ -2,6 +2,7 @@ import React from "react"
 import '../../css/style.css'
 
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 
 export default function About() {
@@ -25,6 +26,8 @@ export default function About() {
           <div className="col-md-3 about-box"></div>  
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }
