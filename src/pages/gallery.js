@@ -4,8 +4,22 @@ import Header from "../components/header"
 
 import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
-import Img from "gatsby-image"
+import { Img, request } from "graphql-request"
 
+
+const query = `
+  graphql {
+    hashtag {
+      edge_hashtag_to_media {
+        edges {
+          node {
+            display_url
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default function Gallery() {
 
@@ -26,12 +40,10 @@ export default function Gallery() {
 
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
 
-  console.log("test")
-  console.log(data)
-
-  console.log(data.allInstagramContent.edges[0].node.localImage.url)
+  request("https://www.instagram.com/explore/tags/hooonstagram/?__a=1", query).then((data1)=>
+    console.log(JSON.stringify(data1,null,2))
+  )
   
-
   return (
     <div id="page-wrapper">
       
