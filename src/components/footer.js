@@ -8,6 +8,13 @@ const Footer = ({ siteTitle }) => (
   
     <div className="footer-settings">
 
+        <head>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+          />
+        </head>
+
         <div className="container">
             
             <div className="row">
@@ -22,6 +29,12 @@ const Footer = ({ siteTitle }) => (
                     <p className="footer-box-font">Phone: (+61) 0405 068 004 &emsp; &emsp; Email: hiartstudio@gmail.com</p>
                 </div>
 
+            </div>
+
+            <div>
+                <p className="footer-box-connect">Connect with us through SNS</p>
+                <p className="footer-box-connect"> <i class="fab fa-instagram fa-lg"></i> &emsp; <i class="fab fa-facebook-square fa-lg"></i>  </p>
+                
             </div>
 
             <div>
