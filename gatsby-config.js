@@ -26,17 +26,6 @@ module.exports = {
         access_token: "IGQVJWek5kdnlrVUowclVnR0xtTjZAjc3oxRzMyMTBTUTNzTDhBNFZAOUTUyQWhsRG5DNzNOanVpc01TVjAwNnh1bUFRVHZAmQl9WWExYYk12Qy1GUnZAtZAEdldHF6M1F2Ul9la3hiakRUblBHUFhBT1kzUQZDZD",
       }
     },
-    {
-      resolve: "gatsby-source-graphql",
-      options: {
-        // Arbitrary name for the remote schema Query type
-        typeName: "Instagram-Hashtag",
-        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "insta",
-        // Url to query from
-        url: "https://www.instagram.com/explore/tags/hooonstagram/?__a=1",
-      }
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
