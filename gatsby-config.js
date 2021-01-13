@@ -16,9 +16,6 @@ module.exports = {
         name: `images`,   
         path: `${__dirname}/src/images`,
       },
-      
-      
-      
     },
     {
       resolve: `gatsby-source-instagram-all`,

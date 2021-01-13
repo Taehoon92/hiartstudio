@@ -103,22 +103,77 @@
   text-align: left !important;
 }
 
+/*porfolio */
 .gallery-box{
   margin: 10px 0px;
   background-color:#fbfbfb;
   display: inline-block;
-  height: 400px;
   border-style: solid;
-  border-color: #2a2a2a;
-  border-width: 5px;
+  border-color: #757575;
+  border-width: 2px;
+  position:relative;
+}
 
+.col-3 {
+  width:25%;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  margin-left:3%;
+  margin-right:3%;
+}
+
+.gallery-box-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
 }
 
 .gallery-image{
   max-height: 350px;
   min-width: 200px;
-  padding-top: 10px;
+  /*padding-top: 5px;*/
 }
+
+.gallery-box-description-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.459);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.gallery-box:hover .gallery-box-description-layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-box-description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.gallery-box:hover .gallery-box-description {
+  transform: translateY(0);
+}
+
+.gallery-box img {
+  margin:0px;
+}
+
 
 /*faq accordian font*/
 .accordianfont{

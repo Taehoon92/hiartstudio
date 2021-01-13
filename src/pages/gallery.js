@@ -66,32 +66,42 @@ export default function Gallery() {
 
       
         <div className = "row"> 
-
-          <div className="gallery-box col-4">
+        <div className="gallery-box col-3">
             <a href={data.allInstagramContent.edges[0].node.permalink}> 
-              <img src={data.allInstagramContent.edges[0].node.localImage.url} />
+              <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.localImage.url} />
+              <div className="gallery-box-description-layer">
+                <p className="gallery-box-description">{data.allInstagramContent.edges[0].node.caption}</p>
+              </div>
             </a>
           </div>  
 
-
-          <div className="gallery-box col-4">
+          <div className="gallery-box col-3">
             <a href={data.allInstagramContent.edges[1].node.permalink}> 
-              <img src={data.allInstagramContent.edges[1].node.localImage.url} />
+              <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.localImage.url} />
+              <div className="gallery-box-description-layer">
+                <p className="gallery-box-description">{data.allInstagramContent.edges[1].node.caption}</p>
+              </div>
             </a>
           </div>  
 
 
-          <div className="gallery-box col-4">
+          <div className="gallery-box col-3">
             <a href={data.allInstagramContent.edges[2].node.permalink}> 
-              <img src={data.allInstagramContent.edges[2].node.localImage.url} />
+              <img className="gallery-box-image" src={data.allInstagramContent.edges[2].node.localImage.url} />
+              <div className="gallery-box-description-layer">
+                <p className="gallery-box-description">{data.allInstagramContent.edges[2].node.caption}</p>
+              </div>
             </a>
           </div>  
 
-          <div className="gallery-box col-4">
+          <div className="gallery-box col-3">
             <a href={data.allInstagramContent.edges[3].node.permalink}> 
-              <img src={data.allInstagramContent.edges[3].node.localImage.url} />
+              <img className="gallery-box-image" src={data.allInstagramContent.edges[3].node.localImage.url} />
+              <div className="gallery-box-description-layer">
+                <p className="gallery-box-description">{data.allInstagramContent.edges[3].node.caption}</p>
+              </div>
             </a>
-          </div>
+          </div>  
 
           
           

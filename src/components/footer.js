@@ -33,7 +33,7 @@ const Footer = ({ siteTitle }) => (
 
             <div>
                 <p className="footer-box-connect">Connect with us through SNS</p>
-                <p className="footer-box-connect"> <i class="fab fa-instagram fa-lg"></i> &emsp; <i class="fab fa-facebook-square fa-lg"></i>  </p>
+                <p className="footer-box-connect"> <i className="fab fa-instagram fa-lg"></i> &emsp; <i className="fab fa-facebook-square fa-lg"></i>  </p>
                 
             </div>
 
