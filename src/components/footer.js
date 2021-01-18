@@ -29,7 +29,15 @@ const Footer = ({ siteTitle }) => (
             </div>
             <div>
                 <p className="footer-box-connect">Connect with us through SNS</p>
-                <p className="footer-box-connect"> <FontAwesomeIcon icon = {["fab","instagram"]} /> &emsp; <FontAwesomeIcon icon = {["fab","facebook-square"]} />  </p>
+                <p className="footer-box-connect">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <FontAwesomeIcon icon = {["fab","instagram"]} />
+                    </a>
+                    &emsp; 
+                    <a href="https://www.facebook.com/hiartstudio" target="_blank">
+                        <FontAwesomeIcon icon = {["fab","facebook-square"]}/>
+                    </a>
+                </p>
             </div>
             <div>
                 <hr className="copyright"></hr>

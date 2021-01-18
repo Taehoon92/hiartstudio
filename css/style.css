@@ -282,3 +282,11 @@ p.footer-box-connect{
   text-align: center;
   font-weight: 300;
 }
+
+.footer-box-connect a {
+  color:#000000;
+}
+
+.footer-box-connect a:hover, .footer-box-connect a:active, .footer-box-connect a:visited {
+  color:#000000;
+}
