@@ -2,23 +2,20 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
 import '../../css/style.css'
+
+library.add(fab)
+
 
 const Footer = ({ siteTitle }) => (
   
     <div className="footer-settings">
-
-        <head>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-          />
-        </head>
-
-        <div className="container">
-            
+        <div className="container">        
             <div className="row">
-
 
                 <div className="footer-box col-4">
                     <img src='../../logo_b.png'></img>
@@ -30,26 +27,18 @@ const Footer = ({ siteTitle }) => (
                 </div>
 
             </div>
-
             <div>
                 <p className="footer-box-connect">Connect with us through SNS</p>
-                <p className="footer-box-connect"> <i className="fab fa-instagram fa-lg"></i> &emsp; <i className="fab fa-facebook-square fa-lg"></i>  </p>
-                
+                <p className="footer-box-connect"> <FontAwesomeIcon icon = {["fab","instagram"]} /> &emsp; <FontAwesomeIcon icon = {["fab","facebook-square"]} />  </p>
             </div>
-
             <div>
                 <hr className="copyright"></hr>
             </div>
-
             <div className="copyright">
                 <p className="copyright">© 2021 Copyright: Hi Art Studio</p>
             </div>
         </div>
-
-        
     </div>
-    
-    
 )
 
 export default Footer

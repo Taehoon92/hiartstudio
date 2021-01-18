@@ -29,9 +29,7 @@ export default function Gallery() {
     allInstagramContent {
       edges {
         node {
-          localImage {
-            url
-          }
+          media_url
           caption
           permalink
         }
@@ -40,11 +38,11 @@ export default function Gallery() {
   }`)
 
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
-
+/*
   request("https://www.instagram.com/explore/tags/hooonstagram/?__a=1", query).then((data1)=>
     console.log(data1)
   )
-  
+  */
   return (
     <div>
       <Header />
@@ -67,7 +65,7 @@ export default function Gallery() {
           <div className = "row"> 
           <div className="gallery-box col-3">
               <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
-                <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.localImage.url} />
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
                 <div className="gallery-box-description-layer">
                   <p className="gallery-box-description">{data.allInstagramContent.edges[0].node.caption}</p>
                 </div>
@@ -76,7 +74,7 @@ export default function Gallery() {
 
             <div className="gallery-box col-3">
               <a href={data.allInstagramContent.edges[1].node.permalink}> 
-                <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.localImage.url} />
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.media_url} />
                 <div className="gallery-box-description-layer">
                   <p className="gallery-box-description">{data.allInstagramContent.edges[1].node.caption}</p>
                 </div>
@@ -86,7 +84,7 @@ export default function Gallery() {
 
             <div className="gallery-box col-3">
               <a href={data.allInstagramContent.edges[2].node.permalink}> 
-                <img className="gallery-box-image" src={data.allInstagramContent.edges[2].node.localImage.url} />
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[2].node.media_url} />
                 <div className="gallery-box-description-layer">
                   <p className="gallery-box-description">{data.allInstagramContent.edges[2].node.caption}</p>
                 </div>
@@ -95,7 +93,7 @@ export default function Gallery() {
 
             <div className="gallery-box col-3">
               <a href={data.allInstagramContent.edges[3].node.permalink}> 
-                <img className="gallery-box-image" src={data.allInstagramContent.edges[3].node.localImage.url} />
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[3].node.media_url} />
                 <div className="gallery-box-description-layer">
                   <p className="gallery-box-description">{data.allInstagramContent.edges[3].node.caption}</p>
                 </div>
