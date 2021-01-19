@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 //import {Link} from "gatsby"
 //import Layout from "../components/layout"
 import Header from "../components/header"
@@ -11,12 +11,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../vendors/animate-css/animate.css'
 import '../../vendors/popup/magnific-popup.css'
 
+import ThemeToggler from 'gatsby-plugin-dark-mode'
+import DarkModeToggle from "react-dark-mode-toggle";
+
+//const [isDarkMode, setIsDarkMode] = useState(() => false);
+
+
 const IndexPage = () => (
 	<div className="index">
 		<div className="title">
 			<img src='../../logo_b.png' className="index-image"/>
 		</div>
 		<Header />
+		
 		<div id="page-wrapper">
 			<div id="welcome" className="col-md-12">
 				<div className="title">
