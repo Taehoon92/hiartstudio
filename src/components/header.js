@@ -6,38 +6,10 @@ import '../../css/style.css'
 import ThemeToggler from 'gatsby-plugin-dark-mode'
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
 import {ToggleButton, ToggleTrack, ToggleThumb} from 'react-toggle-button'
+
+import Toggle from 'react-toggle'
+
 /*
-const useDarkMode = () => {
-  const [theme, setTheme] = useState(null)
-
-  const toggleTheme = useCallback(
-    () => {
-      const nextTheme =
-        theme === themeNames.LIGHT ? themeNames.DARK : themeNames.LIGHT
-
-      setTheme(nextTheme)
-      window.__setPreferredTheme(nextTheme)
-    },
-    [theme]
-  )
-
-  useEffect(() => {
-        // 클라이언트에서는 window.__theme 값으로 테마를 설정한다
-    if (typeof window === 'object') {
-      setTheme(window.__theme)
-    }
-
-        // 테마 변경 시점에 실행할 로직을 추가한다. 
-        // __setPreferredTheme은 변경할 수 없으므로 여기에 React에서 사용할 수 있는 로직을 추가한다.
-    window.__onThemeChange = newTheme => {
-      setTheme(newTheme)
-    }
-  }, [])
-
-  return { theme, toggleTheme }
-}
-
-
 버튼부분
 
 <div>
@@ -70,7 +42,6 @@ const Header = ({ siteTitle }) => {
     window.__setPreferredTheme(websiteTheme === 'dark' ? 'light' : 'dark')
   }
 
-
   return (
     <Navbar expand="md" sticky="top" className="navbar-padding">
       <Navbar.Brand href="/" className="logo">
@@ -93,12 +64,9 @@ const Header = ({ siteTitle }) => {
           <Nav.Link href="/faq">FAQ</Nav.Link>
           <Nav.Link href="/contactus">Contact Us</Nav.Link>
         </Nav>
-        
+        <Toggle/>
       </Navbar.Collapse>
-      
     </Navbar> 
-
-
   )
 }
 

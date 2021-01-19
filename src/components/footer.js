@@ -23,7 +23,7 @@ const Footer = ({ siteTitle }) => (
 
                 <div className="footer-box col-8">
                     <h1 className="footer-box-font">Contact</h1>
-                    <p className="footer-box-font">Phone: (+61) 0405 068 004 &emsp; &emsp; Email: hiartstudio@gmail.com</p>
+                    <p className="footer-box-font">Phone: 0405 068 004 &emsp; &emsp; Email: hiartstudio@gmail.com</p>
                 </div>
 
             </div>
