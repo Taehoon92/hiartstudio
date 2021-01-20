@@ -5,7 +5,7 @@ import '../../css/style.css'
 
 import ThemeToggler from 'gatsby-plugin-dark-mode'
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
-import {ToggleButton, ToggleTrack, ToggleThumb} from 'react-toggle-button'
+import ToggleButton from 'react-toggle-button'
 /*
 const useDarkMode = () => {
   const [theme, setTheme] = useState(null)
