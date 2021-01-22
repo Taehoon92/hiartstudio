@@ -3,13 +3,14 @@ import React from "react"
 //import Layout from "../components/layout"
 import Header from "../components/header"
 import Footer from "../components/footer"
-
+ 
 
 import '../../css/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import '../../vendors/animate-css/animate.css'
 import '../../vendors/popup/magnific-popup.css'
+//after RESET code
 
 const IndexPage = () => (
 	<div className="index">
