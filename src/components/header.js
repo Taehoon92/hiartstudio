@@ -64,7 +64,6 @@ const Header = ({ siteTitle }) => {
           <Nav.Link href="/faq">FAQ</Nav.Link>
           <Nav.Link href="/contactus">Contact Us</Nav.Link>
         </Nav>
-        <Toggle/>
       </Navbar.Collapse>
     </Navbar> 
   )
