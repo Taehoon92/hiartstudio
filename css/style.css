@@ -3,7 +3,8 @@
 {
   overflow: hidden;
   text-align: center;
-  background-color:var(--bg);
+  background-color:seashell;
+  
   margin-bottom: 80px;
 }
 
