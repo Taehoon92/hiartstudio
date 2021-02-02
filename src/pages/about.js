@@ -15,7 +15,7 @@ export default function About() {
             <h1 className="container">About us</h1>
             <p className="container">Short Paragraph Here</p>
           </div>
-          <img src="https://cdn.decoist.com/wp-content/uploads/2017/04/Art-studio-with-a-desk-in-the-center-of-the-room-.jpeg" />
+          <img src='/banner.jpg' />
         </div>
 
         <div className = "col-md-12">

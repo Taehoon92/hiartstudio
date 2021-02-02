@@ -31,7 +31,7 @@
 
 /*banner*/
 .banner-image{
-  width: 100%;
+  width: 1920px;
   height: 300px;
   background-color: white;
   overflow: hidden;
@@ -50,13 +50,10 @@
   color: white;
   padding-top: 20px;
   max-width: 100%;
-
-
 }
 
 .banner-image img {
   z-index: 1;
-  max-width: 100%;
   position: relative;
 }
 
@@ -306,7 +303,7 @@ body {
 body.dark {
   -webkit-font-smoothing: antialiased;
 
-  --bg: darkslategray;
+  --bg: rgb(255, 255, 255);
   --textNormal: rgba(255, 255, 255, 0.88);
   --textTitle: white;
   --textLink: yellow;

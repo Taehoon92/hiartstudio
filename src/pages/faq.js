@@ -24,7 +24,7 @@ export default function faq() {
             <h1 className="container">Frequently Asked Questions</h1>
             <h2 className="container">How can we help you?</h2>
           </div>
-          <img src="https://cdn.decoist.com/wp-content/uploads/2017/04/Art-studio-with-a-desk-in-the-center-of-the-room-.jpeg" />
+          <img src='/banner.jpg' />
         </div>
       
 

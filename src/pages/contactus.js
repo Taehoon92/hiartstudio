@@ -14,7 +14,7 @@ export default function Contactus() {
             <h1 className="container">Contact Us</h1>
             <p className="container">Find the contacting options below</p>
           </div>
-          <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/12804615_844351048999090_7366405912543968522_n.jpg?_nc_cat=109&ccb=2&_nc_sid=6e5ad9&_nc_ohc=D2wN4XsJWwgAX_tF7p5&_nc_ht=scontent-syd2-1.xx&oh=302c9917bb8833ddf790ab3dd403e33b&oe=602201FC" />
+          <img src='/banner.jpg' />
         </div>
 
         <div className="blank-space"></div>
