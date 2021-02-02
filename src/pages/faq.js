@@ -34,7 +34,7 @@ export default function faq() {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> What happens if I miss a className? </h2>
+                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> What happens if I miss a class? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -45,7 +45,7 @@ export default function faq() {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> How often do I need to pay for the className fee? </h2>
+                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> How often do I need to pay for the class fee? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">

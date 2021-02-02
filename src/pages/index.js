@@ -3,6 +3,11 @@ import React, {useState} from "react"
 //import Layout from "../components/layout"
 import Header from "../components/header"
 import Footer from "../components/footer"
+
+//게시판 table
+import { BrowserRouter, Route } from 'react-router-dom';
+import PostMain from "./post/PostMain"
+import PostView from "./post/PostView";
  
 
 import '../../css/style.css'
@@ -29,52 +34,13 @@ const IndexPage = () => (
 				<p>We are located at 5 Saville St. Eight Mile Plains QLD 4113</p>
 
 				<div className="container">
-					<table>
-						<thead>
-						<tr>
-							<th>No.</th>
-							<th>Title</th>
-							<th>Date</th>
-							<th>Views</th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<td>1</td>
-							<td>First Post.</td>
-							<td>2020-10-25</td>
-							<td>6</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Second Post.</td>
-							<td>2020-10-25</td>
-							<td>5</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Third Post.</td>
-							<td>2020-10-25</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Fourth Post.</td>
-							<td>2020-10-25</td>
-							<td>2</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>Fifth Post.</td>
-							<td>2020-10-25</td>
-							<td>4</td>
-						</tr>
-						</tbody>
-					</table>
+					
 
-					<button>
-						Write Post
-					</button>
+					
+					<BrowserRouter>
+						<Route exact path='./post/PostView/:no' component={PostView} />
+						<Route exact path='/' component={PostMain} />
+					</BrowserRouter>
 
 				</div>
 			

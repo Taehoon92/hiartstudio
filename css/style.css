@@ -5,7 +5,7 @@
   text-align: center;
   background-color:seashell;
   
-  margin-bottom: 80px;
+
 }
 
 /*Index Page*/
@@ -78,7 +78,7 @@
 }
 
 .blank-space{
-  height: 30px;
+  height: 100px;
 }
 
 /*about box*/
@@ -92,7 +92,7 @@
 .contact-box{
 
   margin: 10px 0px;
-  background-color:#fbfbfb;
+  background-color:seashell;
   display: inline-block;
   padding: 10px 10px 10px 10px;
   position: relative;
