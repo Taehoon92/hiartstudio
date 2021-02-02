@@ -12,9 +12,6 @@ import '../../vendors/animate-css/animate.css'
 import '../../vendors/popup/magnific-popup.css'
 //after RESET code
 
-import ThemeToggler from 'gatsby-plugin-dark-mode'
-import DarkModeToggle from "react-dark-mode-toggle";
-import {ToggleButton, ToggleTrack, ToggleThumb} from 'react-toggle-button'
 
 
 //const [isDarkMode, setIsDarkMode] = useState(() => false);
@@ -22,9 +19,6 @@ import {ToggleButton, ToggleTrack, ToggleThumb} from 'react-toggle-button'
 
 const IndexPage = () => (
 	<div className="index">
-		<div className="title">
-			<img src='../../logo_b.png' className="index-image"/>
-		</div>
 		<Header />
 		<div id="page-wrapper">
 			<div id="welcome" className="col-md-12">
