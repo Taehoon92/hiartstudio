@@ -18,7 +18,7 @@ const Footer = ({ siteTitle }) => (
             <div className="row">
 
                 <div className="footer-box col-4">
-                    <img src='../../logo_b.png'></img>
+                    <img src='../../logo2.png'></img>
                 </div>
 
                 <div className="footer-box col-8">

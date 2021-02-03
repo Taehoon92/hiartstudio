@@ -42,7 +42,7 @@ const Header = ({ siteTitle }) => {
     <Navbar expand="md" sticky="top" className="navbar-padding">
       <Navbar.Brand href="/" className="logo">
         <img
-          src='../../logo_b.png'
+          src='../../logo2.png'
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
