@@ -5,8 +5,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 //게시판 table
-import PostMain from "./post/PostMain"
- 
+
 
 import '../../css/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -32,10 +31,7 @@ const IndexPage = () => (
 				<p>We are located at 5 Saville St. Eight Mile Plains QLD 4113</p>
 
 				<div className="container">
-					
 
-					
-					<PostMain />
 
 				</div>
 			
