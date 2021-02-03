@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import CommonTable from '../../components/table/CommonTable';
 import CommonTableColumn from '../../components/table/CommonTableColumn';
 import CommonTableRow from '../../components/table/CommonTableRow';
-import postList from '../../Data';
+import { postList } from '../../Data';
  
 const PostList = props => {
   const [ dataList, setDataList ] = useState([]);
@@ -20,9 +19,7 @@ const PostList = props => {
             return (
               <CommonTableRow key={index}>
                 <CommonTableColumn>{ item.no }</CommonTableColumn>
-                <CommonTableColumn>
-                  <Link to={`/postView/${item.no}`}>{ item.title }</Link>
-                </CommonTableColumn>
+                <CommonTableColumn>{ item.title }</CommonTableColumn>
                 <CommonTableColumn>{ item.createDate }</CommonTableColumn>
                 <CommonTableColumn>{ item.readCount }</CommonTableColumn>
               </CommonTableRow>

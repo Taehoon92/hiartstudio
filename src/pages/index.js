@@ -5,9 +5,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 //게시판 table
-import { BrowserRouter, Route } from 'react-router-dom';
 import PostMain from "./post/PostMain"
-import PostView from "./post/PostView";
  
 
 import '../../css/style.css'
@@ -37,10 +35,7 @@ const IndexPage = () => (
 					
 
 					
-					<BrowserRouter>
-						<Route exact path='./post/PostView/:no' component={PostView} />
-						<Route exact path='/' component={PostMain} />
-					</BrowserRouter>
+					<PostMain />
 
 				</div>
 			
