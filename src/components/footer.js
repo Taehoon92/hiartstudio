@@ -35,7 +35,7 @@ const Footer = ({ siteTitle }) => (
             <div>
                 <p className="footer-box-connect">Connect with us through SNS</p>
                 <p className="footer-box-connect">
-                    <a href="https://www.instagram.com" target="_blank">
+                    <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
                         <FontAwesomeIcon icon = {["fab","instagram"]} />
                     </a>
                     &emsp; 
