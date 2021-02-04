@@ -78,7 +78,7 @@
 }
 
 .blank-space{
-  height: 100px;
+  height: 25px;
 }
 
 /*about box*/
@@ -111,23 +111,18 @@
 
 /*porfolio */
 .gallery-box{
-  margin: 10px 0px;
-  background-color:#f0f0f0;
+  margin: 0px 0px;
   display: inline-block;
-  border-style: solid;
-  border-color: #a3a3a3;
-  border-width: 2px;
   position:relative;
 }
 
-.col-3 {
+.col-4 {
   width:25%;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-  margin-left:3%;
-  margin-right:3%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+
 }
 
 .gallery-box-inner {
@@ -281,7 +276,7 @@ h1.footer-box-font{
 
 p.footer-box-font{
 
-  font-weight: 300;
+  font-weight:500;
 }
 
 p.footer-box-connect{

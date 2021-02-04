@@ -14,7 +14,12 @@ library.add(fab)
 const Footer = ({ siteTitle }) => (
   
     <div className="footer-settings">
-        <div className="container">        
+        <div className="container">
+
+            <div className="blank-space">
+                
+            </div>    
+
             <div className="row">
 
                 <div className="footer-box col-4">
