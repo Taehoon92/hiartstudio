@@ -4,8 +4,17 @@
   overflow: hidden;
   text-align: center;
   background-color:seashell;
-  
+}
 
+@media (max-width: 768px) 
+{
+  .navbar .logo {
+    margin-left:0px !important;
+  }
+
+  .navbar-nav {
+    margin-right:0px !important;
+  }
 }
 
 /*Index Page*/
@@ -197,6 +206,10 @@
   margin-bottom:0px;
 }
 
+.navbar .logo {
+  margin-left:3em;
+}
+
 .nav-link{
   color:black !important;
   font-weight: bold;
@@ -206,6 +219,11 @@
   padding-right : 0.5rem !important;
   padding-left : 0.5rem !important;
 }
+
+.navbar-nav {
+  margin-right:3em;
+}
+
 
 .dropdown-menu {
   background-color : #fbfbfb !important;
@@ -224,7 +242,6 @@
   display: block;
   margin-top: 0; 
 }
-
 
 .navbar .nav-link:hover {
   color: #1a50b4  !important; 
