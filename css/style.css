@@ -6,16 +6,7 @@
   background-color:seashell;
 }
 
-@media (max-width: 768px) 
-{
-  .navbar .logo {
-    margin-left:0px !important;
-  }
 
-  .navbar-nav {
-    margin-right:0px !important;
-  }
-}
 
 /*Index Page*/
 
@@ -206,22 +197,53 @@
   margin-bottom:0px;
 }
 
-.navbar .logo {
-  margin-left:3em;
-}
-
 .nav-link{
   color:black !important;
   font-weight: bold;
 }
 
 .navbar-padding {
-  padding-right : 0.5rem !important;
-  padding-left : 0.5rem !important;
+  padding-right : 0.5rem ;
+  padding-left : 0.5rem ;
 }
 
-.navbar-nav {
-  margin-right:3em;
+@media (max-width: 768px) 
+{
+  .navbar {
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:15px !important;
+    padding-right:15px !important;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    width:720px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    width: 1140px;
+  }
 }
 
 
