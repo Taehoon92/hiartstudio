@@ -5,7 +5,7 @@ import React from "react"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faPhoneAlt , faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhoneAlt , faEnvelope, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -30,9 +30,15 @@ const Footer = ({ siteTitle }) => (
 
                 </div>
 
-                <div className="footer-box col-md-8">
+                <div className="footer-box col-md-4">
                     <FontAwesomeIcon icon = {faEnvelope} />
                     <span>&nbsp;&nbsp;hiartstudiobrisbane@gmail.com</span>
+
+                </div>
+
+                <div className="footer-box col-md-4">
+                    <FontAwesomeIcon icon = {faMapMarkedAlt} />
+                    <span>&nbsp;&nbsp;5 Saville St. Eight Mile Plains QLD 4113</span>
 
                 </div>
 

@@ -196,7 +196,7 @@
 }
 
 .blank-space{
-  height: 25px;
+  height: 80px;
 }
 
 /*about box*/
@@ -353,7 +353,7 @@
 
 /* Logo */
 .logo {
-  width:200px;
+  width:400px;
   height:auto;
 }
 
@@ -372,6 +372,7 @@
   margin-top: 20px;
   display: inline-block;
   height: 50px;
+  font-weight: 500;
 }
 
 .icon-box {
@@ -380,10 +381,6 @@
 
 p.footer-box-connect{
   text-align: center;
-  font-weight: 300;
-}
-
-span.footer-box{
   font-weight: 300;
 }
 

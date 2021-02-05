@@ -80,6 +80,8 @@ export default function faq() {
         </div>
       </div>
 
+      <div className="blank-space"></div>
+
       <Footer />
     </div>
 

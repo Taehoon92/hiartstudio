@@ -142,6 +142,9 @@ export default function Gallery() {
 
           </div>
         </div>
+
+        <div className="blank-space"></div>
+        
       </div>
       <Footer />
     </div>
