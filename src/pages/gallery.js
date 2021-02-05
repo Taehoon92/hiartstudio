@@ -66,8 +66,79 @@ export default function Gallery() {
                   <p className="gallery-box-description">{data.allInstagramContent.edges[0].node.caption}</p>
                 </div>
               </a>
-            </div>  
+            </div>
 
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[1].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[1].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[2].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[2].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[2].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[3].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[3].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[3].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[4].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[4].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[4].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[5].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[5].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[5].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[6].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[6].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[6].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[7].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[7].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[7].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[8].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[8].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[8].node.caption}</p>
+                </div>
+              </a>
+            </div>
 
           </div>
         </div>
