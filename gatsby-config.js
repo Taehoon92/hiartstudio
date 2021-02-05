@@ -20,7 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: "IGQVJWek5kdnlrVUowclVnR0xtTjZAjc3oxRzMyMTBTUTNzTDhBNFZAOUTUyQWhsRG5DNzNOanVpc01TVjAwNnh1bUFRVHZAmQl9WWExYYk12Qy1GUnZAtZAEdldHF6M1F2Ul9la3hiakRUblBHUFhBT1kzUQZDZD",
+        //access_token: "IGQVJWek5kdnlrVUowclVnR0xtTjZAjc3oxRzMyMTBTUTNzTDhBNFZAOUTUyQWhsRG5DNzNOanVpc01TVjAwNnh1bUFRVHZAmQl9WWExYYk12Qy1GUnZAtZAEdldHF6M1F2Ul9la3hiakRUblBHUFhBT1kzUQZDZD",
+        access_token : "IGQVJYbUtEcE1IaTh1ekEtTV83WVZATeVFRbUI0VXNjT2VMSHBDTXowa0FkUU9ycVI3ZAWp6Q3d6c3JlbVZAQbUVickxHTVAydzRtdHdKcXE4QUtWa3NlbDJlNzItRzg4M1I3QnN3N3hHRWN3X0RPUjRESAZDZD"
       }
     },
     `gatsby-transformer-sharp`,
