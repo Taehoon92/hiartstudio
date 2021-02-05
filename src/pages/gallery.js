@@ -40,7 +40,7 @@ export default function Gallery() {
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
 
   return (
-    <div>
+    <div id="page">
       <Header />
       <div id="page-wrapper">
         <div className="banner-image">

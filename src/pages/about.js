@@ -7,7 +7,7 @@ import Footer from "../components/footer"
 
 export default function About() {
   return (
-    <div>
+    <div id="page">
       <Header />
       <div id="page-wrapper">
         <div className="banner-image">

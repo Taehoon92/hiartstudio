@@ -8,8 +8,7 @@ import {Card, Button, Accordion}  from 'react-bootstrap';
 
 export default function faq() {
   return (
-    
-    <div>
+    <div id="page">
       <Header />
       <div id="page-wrapper">
         <head>

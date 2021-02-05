@@ -20,7 +20,7 @@ import '../../vendors/popup/magnific-popup.css'
 
 
 const IndexPage = () => (
-	<div className="index">
+	<div id ="page" className="index">
 		<Header />
 		<div id="page-wrapper">
 			<div id="welcome" className="col-md-12">
