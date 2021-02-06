@@ -39,24 +39,26 @@ const Header = ({ siteTitle }) => {
   }
 
   return (
-    <Navbar expand="md" sticky="top" className="navbar-padding">
-      <Navbar.Brand href="/" className="logo">
-        <img
-          src='../../logo2.png'
-          className="d-inline-block align-top"
-          alt="React Bootstrap logo"
-        />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">          
-        <Nav className="ml-auto">
-          <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/gallery">Gallery</Nav.Link>
-          <Nav.Link href="/faq">FAQ</Nav.Link>
-          <Nav.Link href="/contactus">Contact Us</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar> 
+    <div id="navbar">
+      <Navbar expand="md" sticky="top" className="navbar-padding">
+        <Navbar.Brand href="/" className="logo">
+          <img
+            src='../../logo2.png'
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">          
+          <Nav className="ml-auto">
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/gallery">Gallery</Nav.Link>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+            <Nav.Link href="/contactus">Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar> 
+    </div>
   )
 }
 

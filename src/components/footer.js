@@ -36,26 +36,35 @@ const Footer = ({ siteTitle }) => (
 
                 </div>
 
-                <div className="footer-box col-md-4">
+                <div className="footer-box col-md-6">
                     <FontAwesomeIcon icon = {faMapMarkedAlt} />
                     <span>&nbsp;&nbsp;5 Saville St. Eight Mile Plains QLD 4113</span>
-
+                    <span className="footer-sns">
+                        <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
+                            <FontAwesomeIcon icon = {["fab","instagram"]} size="lg"/>
+                        </a>
+                        &emsp; 
+                        <a href="https://www.facebook.com/hiartstudio" target="_blank">
+                            <FontAwesomeIcon icon = {["fab","facebook-square"]} size="lg"/>
+                        </a>
+                    </span>
                 </div>
 
-
-                <div className="footer-box icon-box col-2">
-                    <div>
-                        <p>
-                            <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
-                                <FontAwesomeIcon icon = {["fab","instagram"]} size="lg"/>
-                            </a>
-                            &emsp; 
-                            <a href="https://www.facebook.com/hiartstudio" target="_blank">
-                                <FontAwesomeIcon icon = {["fab","facebook-square"]} size="lg"/>
-                            </a>
-                        </p>
-                    </div>
+                <div className="footer-box col-md-6" id="footer-sns-mobile">
+                    <span>
+                        <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
+                            <FontAwesomeIcon icon = {["fab","instagram"]} size="lg"/>
+                            <span>&nbsp;&nbsp;Instagram</span>
+                        </a>
+                        &emsp; 
+                        <a href="https://www.facebook.com/hiartstudio" target="_blank">
+                            &nbsp;&nbsp;
+                            <FontAwesomeIcon icon = {["fab","facebook-square"]} size="lg"/>
+                            <span>&nbsp;&nbsp;Facebook</span>
+                        </a>
+                    </span>
                 </div>
+
 
             </div>
 
