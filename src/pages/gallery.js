@@ -45,9 +45,8 @@ export default function Gallery() {
       <div id="page-wrapper">
         <div className="banner-image">
           <div className = "banner-text">
-            <h1 className="container">Gallery</h1>
+            <h1 className="container">Artworks</h1>
             <p className="container">Take a peek at our proud students' works</p>
-            <p className="container">Click on the image to enlarge</p>
           </div>
           <img src='/banner.jpg' />
         </div>

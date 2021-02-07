@@ -37,6 +37,10 @@ const IndexPage = () => (
 			
 			</div>
 		</div>
+
+		<div className="blank-space">
+			
+		</div>
 		
 		<Footer />
 	</div>

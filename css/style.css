@@ -79,6 +79,10 @@
     margin-right:15px !important;
   }
 
+  #navbar {
+    padding-top:10% !important;
+    padding-bottom:5% !important;
+  }
 
 }
 
@@ -135,7 +139,9 @@
     display:none;
   }
 
-  
+  .blank-space {
+    height: 60px !important;
+  }
 
 }
 
@@ -185,6 +191,10 @@
   .navbar-brand {
     max-width:50% !important;
   }
+
+  #navbar {
+    height: 200px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -228,6 +238,10 @@
 
   #footer-sns-mobile {
     display:none;
+  }
+
+  .blank-space {
+    height: 70px !important;
   }
 
 }
@@ -347,7 +361,7 @@
 }
 
 .blank-space{
-  height: 80px;
+  height: 40px;
 }
 
 /*about box*/
@@ -459,9 +473,7 @@
 
 /* Nav Bar */
 #navbar {
-  height: 200px;
   background-color: var(--nav-bg);
-  margin-bottom:30px;
   padding-top:70px;
   padding-bottom:30px;
 }
