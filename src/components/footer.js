@@ -21,24 +21,19 @@ const Footer = ({ siteTitle }) => (
 
             <div className="row">
 
-                <div className="footer-box col-md-2">
-
-                    <FontAwesomeIcon icon = {faPhoneAlt} />
-                    <span>&nbsp;&nbsp;0400 123 456</span>
-
-
-
+                <div className="footer-box col-md-5">
+                    <FontAwesomeIcon icon = {faMapMarkedAlt} />
+                    <span>&nbsp;&nbsp;5 Saville St. Eight Mile Plains QLD 4113</span>
                 </div>
 
                 <div className="footer-box col-md-4">
                     <FontAwesomeIcon icon = {faEnvelope} />
                     <span>&nbsp;&nbsp;hiartstudiobrisbane@gmail.com</span>
-
                 </div>
 
-                <div className="footer-box col-md-6">
-                    <FontAwesomeIcon icon = {faMapMarkedAlt} />
-                    <span>&nbsp;&nbsp;5 Saville St. Eight Mile Plains QLD 4113</span>
+                <div className="footer-box col-md-3">
+                    <FontAwesomeIcon icon = {faPhoneAlt} />
+                    <span>&nbsp;&nbsp;0400 123 456</span>
                     <span className="footer-sns">
                         <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
                             <FontAwesomeIcon icon = {["fab","instagram"]} size="lg"/>
@@ -48,6 +43,7 @@ const Footer = ({ siteTitle }) => (
                             <FontAwesomeIcon icon = {["fab","facebook-square"]} size="lg"/>
                         </a>
                     </span>
+
                 </div>
 
                 <div className="footer-box col-md-6" id="footer-sns-mobile">
