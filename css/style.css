@@ -514,7 +514,7 @@
 /* Footer */
 
 .footer-settings{
-  background-color:#ffdcce  ;
+  background-color:#FF444444 ;
 }
 
 .footer-box{
@@ -522,6 +522,7 @@
   display: inline-block;
   height: 50px;
   font-weight: 500;
+  color: #2a2a2a;
 }
 
 .icon-box {
