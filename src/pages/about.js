@@ -13,18 +13,65 @@ export default function About() {
         <div className="banner-image">
           <div className = "banner-text">
             <h1 className="container">About us</h1>
-            <p className="container">Short Paragraph Here</p>
+            <p className="container">Take a look at our art studio</p>
           </div>
           <img src='/banner.jpg' />
         </div>
 
-        <div className = "col-md-12">
-          <div className="about-box col-md-3 ">
-            <div className="test"></div>
-          </div>  
-          <div className="col-md-3 about-box"></div>  
-          <div className="col-md-3 about-box"></div>  
+        <div className="container">
+
+          <h3 className="aboutus-quote-margin">
+            "The best art experience with reasonable price."
+          </h3>
+
+          <div className="row">
+            <div className="col-md-7 aboutus-left-col">
+
+              <p className="aboutus-text">
+                1. 18 years teaching experience for portfolio university in Australia, UK, USA, and South Korea.
+              </p>
+
+              <p className="aboutus-text">
+                2. The best Portfolio & Competition history in Brisbane  
+              </p>
+
+              <p className="aboutus-text">
+                3. Professional Art Materials and tools you can hire for free -
+                <div newline></div>
+                Winsor and Newtons, Daniel smith, Arches, Golden, Prismacolour, iMac n Wacom Cintique, etc. (20,000+$ for buying)
+              </p>
+
+              <p className="aboutus-text">
+                4. Safe, Clean, Separated with strangers and Air conditioning studio
+              </p>
+
+              <p className="aboutus-text">
+                5. All inclusive price is around 17-25$ per an hour - Nothing to to bring or buy.
+              </p>
+
+              <p className="aboutus-text">
+                6. Purchasing agent for art supplies - The cheapest price match available. 
+              </p>
+
+            </div>
+
+            <div className="col-md-5">
+              <img className="aboutus-image" src='/aboutus-01.jpg' />
+              <img className="aboutus-image" src='/aboutus-02.jpg' />
+              <img className="aboutus-image" src='/aboutus-03.jpg' />
+              <img className="aboutus-image" src='/aboutus-04.jpeg' />
+              <img className="aboutus-image" src='/aboutus-05.jpg' />
+            </div>
+
+            <div className = "blank-space">
+            </div>
+          </div>
         </div>
+
+        
+
+        
+        
       </div>
 
       <Footer />

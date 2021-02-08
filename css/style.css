@@ -597,3 +597,78 @@ body.dark {
   margin-left: auto;
   margin-right: auto;
 }
+
+.newline{
+  white-space: pre-wrap;
+}
+
+.banner-subheading{
+  font-size: large;
+  font-weight: 400;
+}
+
+/*ABOUT US*/
+
+.aboutus-text{
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.aboutus-quote-margin{
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.aboutus-left-col{
+  height: 470px;
+  text-align: left;
+}
+
+.aboutus-right-col{
+  height: 270px;
+  text-align: left;
+  margin-top: 150px;
+}
+
+.aboutus-image{
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+/*CLASS*/
+
+.class-left-col{
+  height: 500px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.class-right-col{
+  height: 650px;
+  text-align: left;
+}
+
+.class-image{
+  margin-top: 60px;
+  width: fit-content;
+}
+
+.class-heading-top{
+  font-size: larger;
+  font-weight: 600;
+}
+
+.class-heading{
+  font-size: larger;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0px !important;
+}
+
+.class-text{
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color:dimgrey !important;
+}
