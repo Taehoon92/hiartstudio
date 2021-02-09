@@ -40,10 +40,16 @@ export default function faq() {
               <Accordion.Collapse eventKey="0">
 
                 <Card.Body>
+                  <p>
                   It varies depends on which class you choose.
+                  </p>
+
                   <div newline>
                   </div>
-                  You need to contact mobile below. Please check the subsequent FAQ.
+
+                  <p>
+                    You need to contact mobile below. Please check the subsequent FAQ.
+                  </p>
                 </Card.Body>
 
               </Accordion.Collapse>
