@@ -43,6 +43,8 @@ export default function Gallery() {
     <div id="page">
       <Header />
       <div id="page-wrapper">
+
+        
         <div className="banner-image">
           <div className = "banner-text">
             <h1 className="container">Artworks</h1>
@@ -50,6 +52,7 @@ export default function Gallery() {
           </div>
           <img src='/banner.jpg' />
         </div>
+        
 
         <div className="blank-space"></div>
 

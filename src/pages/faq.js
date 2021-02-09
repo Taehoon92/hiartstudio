@@ -18,6 +18,7 @@ export default function faq() {
           />
         </head>
 
+        {/*
         <div className="banner-image">
           <div className = "banner-text">
             <h1 className="container">Frequently Asked Questions</h1>
@@ -25,7 +26,7 @@ export default function faq() {
           </div>
           <img src='/banner.jpg' />
         </div>
-      
+        */}
 
         <div className ="container accordianfont">
           <Accordion>

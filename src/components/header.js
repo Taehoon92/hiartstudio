@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => {
         
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">          
-          <Nav className="ml-auto">
+          <Nav>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/class">Class</Nav.Link>
             <Nav.Link href="/gallery">Artworks</Nav.Link>
@@ -61,6 +61,13 @@ const Header = ({ siteTitle }) => {
         </Navbar.Brand>
         
       </Navbar> 
+
+      <div className="navbar-subheading-top"></div>
+      <div className="navbar-subheading-bottom">
+        <p>
+          VISUAL ART TUTORIAL SPECIALIST
+        </p>
+      </div>
 
     </div>
   )

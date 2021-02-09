@@ -10,6 +10,8 @@ export default function Class() {
     <div id="page">
       <Header />
       <div id="page-wrapper">
+
+        {/*
         <div className="banner-image">
           <div className = "banner-text">
             <h1 className="container">Class Information</h1>
@@ -17,6 +19,7 @@ export default function Class() {
           </div>
           <img src='/banner.jpg' />
         </div>
+        */}
 
         <div className="container">
 

@@ -481,6 +481,7 @@
 .navbar {
   background-color: #444444 !important;
   align-content : center;
+  padding: 0 0 !important;
 }
 
 .navbar img {
@@ -488,7 +489,7 @@
 }
 
 .nav-link{
-  color:black !important;
+  color:#989898 !important;
   font-weight: bold;
 }
 
@@ -500,6 +501,20 @@
 .navbar-brand {
   margin-right: 0 !important;
   margin-left: 1rem !important;
+}
+
+.navbar-subheading-top{
+  background-color: black !important;
+  height: 10px !important;
+}
+
+.navbar-subheading-bottom{
+  background-color: #444444 !important;
+  height: fit-content !important;
+
+  text-align: right;
+  font-weight: bold;
+  color: #7a7a7a;
 }
 
 

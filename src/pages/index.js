@@ -14,7 +14,7 @@ import '../../vendors/animate-css/animate.css'
 import '../../vendors/popup/magnific-popup.css'
 //after RESET code
 
-
+import BootstrapCarousel from '../components/BootstrapCarousel'  
 
 //const [isDarkMode, setIsDarkMode] = useState(() => false);
 
@@ -31,9 +31,9 @@ const IndexPage = () => (
 				<p>We are located at 5 Saville St. Eight Mile Plains QLD 4113</p>
 
 				<div className="container">
-
-
+					<BootstrapCarousel></BootstrapCarousel>  
 				</div>
+				
 			
 			</div>
 		</div>
