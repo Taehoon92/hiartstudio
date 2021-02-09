@@ -46,7 +46,7 @@ const Footer = ({ siteTitle }) => (
 
                 </div>
 
-                <div className="footer-box col-md-6" id="footer-sns-mobile">
+                <div className="footer-box col-md-6 footer-logo-colour" id="footer-sns-mobile">
                     <span>
                         <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
                             <FontAwesomeIcon icon = {["fab","instagram"]} size="lg"/>
