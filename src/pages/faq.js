@@ -20,12 +20,7 @@ export default function faq() {
             />
           </Navbar.Brand>
         </div>
-        <div className="navbar-subheading-top container"></div>
-          <div className="navbar-subheading-bottom container">
-            <p>
-            VISUAL ART TUTORIAL SPECIALIST
-            </p>
-          </div>
+        <div className="navbar-subheading-top"></div>
           <div className="navbar-subheading-bottom-menu container">
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/class">Class</Nav.Link>
@@ -170,7 +165,7 @@ export default function faq() {
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> Emergency happened. What can I do? </h2>
+                <h2 className="accordianquestion"> Emergency happened. What can I do? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="3">

@@ -20,31 +20,26 @@ export default function About() {
             />
           </Navbar.Brand>
         </div>
-        <div className="navbar-subheading-top container"></div>
-          <div className="navbar-subheading-bottom container">
-            <p>
-            VISUAL ART TUTORIAL SPECIALIST
-            </p>
-          </div>
+
+        <div className="navbar-subheading-top"></div>
+
           <div className="navbar-subheading-bottom-menu container">
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/class">Class</Nav.Link>
             <Nav.Link href="/gallery">Artworks</Nav.Link>
             <Nav.Link href="/faq">FAQ</Nav.Link>
+          </div>
         </div>
-      </div>
 
       <div id="page-wrapper">
 
-        {/*
-        <div className="banner-image">
+        <div className="banner-image container">
           <div className = "banner-text">
             <h1 className="container">About us</h1>
             <p className="container">Take a look at our art studio</p>
           </div>
           <img src='/banner.jpg' />
         </div>
-        */}
 
         <div className="container">
 

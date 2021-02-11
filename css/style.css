@@ -22,13 +22,8 @@
   .banner-image {
     margin-left:auto;
     margin-right:auto;
-    height: 300px;
     background-color: white;
     overflow: hidden;
-  }
-  
-  .banner-text {
-    width:100%;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -102,14 +97,9 @@
   .banner-image {
     margin-left:auto;
     margin-right:auto;
-    width: 520px;
     height: 300px;
     background-color: white;
     overflow: hidden;
-  }
-
-  .banner-text {
-    width: 520px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -147,11 +137,6 @@
     height: 60px !important;
   }
 
-  .navbar-subheading-top {
-    width: 576px !important;
-    max-width: 576px !important;
-  }
-
   .navbar-subheading-bottom {
     width: 576px !important;
     max-width: 576px !important;
@@ -178,14 +163,9 @@
   .banner-image {
     margin-left:auto;
     margin-right:auto;
-    width: 700px;
     height: 300px;
     background-color: white;
     overflow: hidden;
-  }
-
-  .banner-text {
-    width: 700px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -223,11 +203,6 @@
     font-size: large !important;
   }
 
-  .navbar-subheading-top {
-    width: 768px !important;
-    max-width: 768px !important;
-  }
-
   .navbar-subheading-bottom {
     width: 768px !important;
     max-width: 768px !important;
@@ -256,14 +231,9 @@
   .banner-image {
     margin-left:auto;
     margin-right:auto;
-    width: 940px;
     height: 300px;
     background-color: white;
     overflow: hidden;
-  }
-
-  .banner-text {
-    width: 940px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -289,12 +259,6 @@
 
   .blank-space {
     height: 70px !important;
-  }
-
-  .navbar-subheading-top {
-    width: 992px !important;
-    max-width: 992px !important;
-
   }
 
   .navbar-subheading-bottom {
@@ -323,14 +287,9 @@
   .banner-image {
     margin-left:auto;
     margin-right:auto;
-    width: 1120px;
     height: 300px;
     background-color: white;
     overflow: hidden;
-  }
-
-  .banner-text {
-    width: 1120px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -352,12 +311,6 @@
 
   #footer-sns-mobile {
     display:none;
-  }
-
-  .navbar-subheading-top {
-    width: 1200px !important;
-    max-width: 3000px !important;
-
   }
 
   .navbar-subheading-bottom {
@@ -409,7 +362,10 @@
 */
 
 .banner-image{
-  margin-top: 20px;
+  margin-top: 60px;
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .banner-image h1{
@@ -443,8 +399,10 @@
   position: absolute;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
+  width:100%;
   height:300px;
   padding-top: 60px;
+  
 }
 
 .row {
@@ -466,7 +424,7 @@
 .contact-box{
 
   margin: 10px 0px;
-  background-color:seashell;
+  background-color:white;
   display: inline-block;
   padding: 10px 10px 10px 10px;
   position: relative;
@@ -561,6 +519,11 @@
   font-weight: bold;
   color: #2a2a2a !important;
 }
+
+.accordian-answer{
+  margin-left: 15px;
+}
+
 .accordian-answer-lastline{
   margin-bottom: 0 !important;
 }
@@ -607,7 +570,8 @@
 
 .navbar-subheading-top{
   background-color: black !important;
-  height: 10px !important;
+  height: 15px !important;
+  width: 100% !important;
 }
 
 .navbar-subheading-bottom{
@@ -674,6 +638,11 @@
   position: relative;
 }
 
+.container div{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* Footer */
 
 .footer-settings{
@@ -716,8 +685,8 @@ p.footer-box-connect{
     
 /* Dark Mode */
 body {
-  --bg:seashell;
-  --bg-nav:seashell;
+  --bg:white;
+  --bg-nav:white;
   --textNormal: #222;
   --textTitle: #222;
   --textLink: black;
@@ -729,7 +698,7 @@ body {
 body.dark {
   -webkit-font-smoothing: antialiased;
 
-  --bg: seashell;
+  --bg: white;
   --textNormal: rgba(255, 255, 255, 0.88);
   --textTitle: white;
   --textLink: yellow;
