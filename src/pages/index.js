@@ -16,12 +16,39 @@ import '../../vendors/popup/magnific-popup.css'
 
 import BootstrapCarousel from '../components/BootstrapCarousel'  
 
+import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
+
+
 //const [isDarkMode, setIsDarkMode] = useState(() => false);
 
 
 const IndexPage = () => (
 	<div id ="page" className="index">
-		<Header />
+
+		<div className="navbar">
+			<div className="navbar-subheading-bottom container">
+				<Navbar.Brand href="/" className="logo container">
+					<img
+						src='../../logo2.png'
+						className="d-inline-block align-top"
+						alt="React Bootstrap logo"
+					/>
+				</Navbar.Brand>
+			</div>
+			<div className="navbar-subheading-top container"></div>
+				<div className="navbar-subheading-bottom container">
+					<p>
+					VISUAL ART TUTORIAL SPECIALIST
+					</p>
+				</div>
+				<div className="navbar-subheading-bottom-menu container">
+					<Nav.Link href="/about">About</Nav.Link>
+					<Nav.Link href="/class">Class</Nav.Link>
+					<Nav.Link href="/gallery">Artworks</Nav.Link>
+					<Nav.Link href="/faq">FAQ</Nav.Link>
+			</div>
+		</div>
+		
 		<div id="page-wrapper">
 			<div id="welcome" className="col-md-12">
 
@@ -33,7 +60,6 @@ const IndexPage = () => (
 				<div className="container">
 					<BootstrapCarousel></BootstrapCarousel>  
 				</div>
-				
 			
 			</div>
 		</div>
@@ -41,6 +67,8 @@ const IndexPage = () => (
 		<div className="blank-space">
 			
 		</div>
+
+		
 		
 		<Footer />
 	</div>

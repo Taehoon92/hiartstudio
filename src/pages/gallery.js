@@ -6,6 +6,7 @@ import Footer from "../components/footer"
 import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
 import { Img, request } from "graphql-request"
+import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
 
 
 const query = `
@@ -41,7 +42,30 @@ export default function Gallery() {
 
   return (
     <div id="page">
-      <Header />
+      <div className="navbar">
+        <div className="navbar-subheading-bottom container">
+          <Navbar.Brand href="/" className="logo container">
+            <img
+              src='../../logo2.png'
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Navbar.Brand>
+        </div>
+        <div className="navbar-subheading-top container"></div>
+          <div className="navbar-subheading-bottom container">
+            <p>
+            VISUAL ART TUTORIAL SPECIALIST
+            </p>
+          </div>
+          <div className="navbar-subheading-bottom-menu container">
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/class">Class</Nav.Link>
+            <Nav.Link href="/gallery">Artworks</Nav.Link>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+        </div>
+      </div>
+
       <div id="page-wrapper">
 
         
