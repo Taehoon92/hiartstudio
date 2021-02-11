@@ -18,8 +18,8 @@ export class BootstrapCarousel extends Component {
 
             <Carousel.Item style={{'height':"300px"}} >  
 
-                <img style={{'height':"300px"}}  
-                className="d-block w-100"  
+                <img
+                className="d-block w-100 image-carousel"  
                 src={'/banner.jpg'}  />  
 
                 <Carousel.Caption>    
@@ -29,8 +29,8 @@ export class BootstrapCarousel extends Component {
 
             <Carousel.Item style={{'height':"300px"}}>  
 
-                <img style={{'height':"300px"}}  
-                className="d-block w-100"  
+                <img
+                className="d-block w-100 image-carousel"  
                 src={'/banner.jpg'}    />  
 
                 <Carousel.Caption>   
@@ -40,8 +40,8 @@ export class BootstrapCarousel extends Component {
 
             <Carousel.Item style={{'height':"300px"}}>  
 
-                <img style={{'height':"300px"}}  
-                className="d-block w-100"  
+                <img 
+                className="d-block w-100 image-carousel"  
                 src={'/banner.jpg'}   />  
 
                 <Carousel.Caption>  

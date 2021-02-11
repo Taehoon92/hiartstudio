@@ -64,14 +64,14 @@ export default function faq() {
               <Accordion.Collapse eventKey="0">
 
                 <Card.Body>
-                  <p>
+                  <p className="accordian-answer">
                   It varies depends on which class you choose.
                   </p>
 
                   <div newline>
                   </div>
 
-                  <p>
+                  <p className="accordian-answer accordian-answer-lastline">
                     You need to contact mobile below. Please check the subsequent FAQ.
                   </p>
                 </Card.Body>
@@ -88,13 +88,25 @@ export default function faq() {
               <Accordion.Collapse eventKey="1">
                 
                 <Card.Body>
+
+                <p className="accordian-answer">
                   Please send a text message to 0405-068-004 or email below.
-                  <div newline>
-                  </div>
+                </p>
+                  
+                <div newline>
+                </div>
+
+                <p className="accordian-answer">
                   Students’ name, age/grade in school, and pictures of artworks as many as possible we need.
-                  <div newline>
-                  </div>
+                </p>
+
+                <div newline>
+                </div>
+
+                <p className="accordian-answer accordian-answer-lastline">
                   Head Teacher Lan Kim will call you back after classes to explain recommended options.
+                </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>
@@ -109,22 +121,46 @@ export default function faq() {
               <Accordion.Collapse eventKey="2">
                 
                 <Card.Body>
-                  Please send a text message to 0405-068-004 with "Which day you can’t attend" and "Which day you want" for a make up lesson.
+
+                  <p className="accordian-answer">
+                    Please send a text message to 0405-068-004 with "Which day you can’t attend" and "Which day you want" for a make up lesson.
+                  </p>
+
                   <div newline>
                   </div>
-                  Head Teacher Lan Kim will reply you back in 24 hours with recommended “date and time” for the make up lesson.
+
+                  <p className="accordian-answer">
+                    Head Teacher Lan Kim will reply you back in 24 hours with recommended “date and time” for the make up lesson.
+                  </p>
+                  
                   <div newline>
                   </div>
-                  We recommend to book within the week for same topic with classmates or on school holiday season.
+
+                  <p className="accordian-answer">
+                    We recommend to book within the week for same topic with classmates or on school holiday season.
+                  </p>
+
                   <div newline>
                   </div>
-                  Make up request needs at least 24 hours earlier before the class time to book others’ make up lesson for your spot.
+
+                  <p className="accordian-answer">
+                    Make up request needs at least 24 hours earlier before the class time to book others’ make up lesson for your spot.
+                  </p>
+
                   <div newline>
                   </div>
-                  No day/Late notices by personal reason will be accepted due to group lesson ratio (3-5 students per 1 teacher)
+
+                  <p className="accordian-answer">
+                    No day/Late notices by personal reason will be accepted due to group lesson ratio (3-5 students per 1 teacher)
+                  </p>
+
                   <div newline>
                   </div>
-                  All the professional artists are hired weeks ago and should be paid.
+
+                  <p className="accordian-answer accordian-answer-lastline">
+                    All the professional artists are hired weeks ago and should be paid.
+                  </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>
@@ -140,13 +176,25 @@ export default function faq() {
               <Accordion.Collapse eventKey="3">
 
                 <Card.Body>
+
+                <p className="accordian-answer">
                   Hi Art Studio allows some exceptional cases for make up and credit.
-                  <div newline>
-                  </div>
+                </p>
+
+                <div newline>
+                </div>
+
+                <p className="accordian-answer">
                   Hospital issue (Dr,Certificate required), Oversea travel (Ticket required), Natural disaster like heavy rain or covid19 out break, or any reasons by studio.
-                  <div newline>
-                  </div>
+                </p>
+
+                <div newline>
+                </div>
+
+                <p className="accordian-answer accordian-answer-lastline">
                   Please leave a text message asap. We will try our best, better than terms and conditions if it was not repeated.
+                </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>
@@ -162,10 +210,18 @@ export default function faq() {
               <Accordion.Collapse eventKey="4">
 
                 <Card.Body>
-                  Sorry, We can’t offer any trial lesson due to lack of spots.
+
+                  <p className="accordian-answer">
+                    Sorry, We can’t offer any trial lesson due to lack of spots.
+                  </p>
+
                   <div newline>
                   </div>
-                  Waiting list is so common for us but  please never hesitate to contact us for frequently changing spots.
+
+                  <p className="accordian-answer accordian-answer-lastline">
+                    Waiting list is so common for us but  please never hesitate to contact us for frequently changing spots.
+                  </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>
@@ -181,13 +237,25 @@ export default function faq() {
               <Accordion.Collapse eventKey="5">
 
                 <Card.Body>
-                  We have 4 terms for 13wks per a year(52wks).
+
+                  <p className="accordian-answer">
+                    We have 4 terms for 13wks per a year(52wks).
+                  </p>
+
                   <div newline>
                   </div>
-                  Each of term period and cost will be sent on envelope with terms and conditions paper.
+
+                  <p className="accordian-answer">
+                    Each of term period and cost will be sent on envelope with terms and conditions paper.
+                  </p>
+
                   <div newline>
                   </div>
-                  All inclusive tuition fee including supplies varies depends on the classes but 16~25$ per an hour.
+
+                  <p className="accordian-answer accordian-answer-lastline">
+                    All inclusive tuition fee including supplies varies depends on the classes but 16~25$ per an hour.
+                  </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>
@@ -203,10 +271,18 @@ export default function faq() {
               <Accordion.Collapse eventKey="6">
 
                 <Card.Body>
-                  10~20 classes, 150~200 students, 6+ teachers per a week.
+
+                  <p className="accordian-answer">
+                    10~20 classes, 150~200 students, 6+ teachers per a week.
+                  </p>
+
                   <div newline>
                   </div>
-                  Ratio is 3~5 students per 1 teacher.
+
+                  <p className="accordian-answer accordian-answer-lastline">
+                    Ratio is 3~5 students per 1 teacher.
+                  </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>
@@ -222,10 +298,18 @@ export default function faq() {
               <Accordion.Collapse eventKey="7">
 
                 <Card.Body>
-                  Head Teacher Lan Kim has always opened 365 but closing on public holiday from 2021 for other teachers.
+
+                  <p className="accordian-answer">
+                    Head Teacher Lan Kim has always opened 365 but closing on public holiday from 2021 for other teachers.
+                  </p>
+
                   <div newline>
                   </div>
-                  Make up lessons and credit available.
+
+                  <p className="accordian-answer accordian-answer-lastline">
+                    Make up lessons and credit available.
+                  </p>
+
                 </Card.Body>
 
               </Accordion.Collapse>

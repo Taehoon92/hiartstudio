@@ -85,6 +85,9 @@
     padding-bottom:5% !important;
   }
 
+  .accordian-answer{
+    font-size: small;
+  }
 }
 
 @media (min-width: 576px) {
@@ -156,6 +159,10 @@
 
   .nav-link{
     padding: 0 1.5rem !important;
+  }
+
+  .accordian-answer{
+    font-size: small;
   }
 }
 
@@ -230,6 +237,11 @@
   .nav-link{
     padding: 0 1.5rem !important;
   }
+
+  .accordian-answer{
+    font-size: medium;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -294,6 +306,10 @@
     padding: 0 1.5rem !important;
   }
 
+  .accordian-answer{
+    font-size: medium;
+  }
+
 }
 @media (min-width: 1200px) {
   .navbar {
@@ -352,6 +368,10 @@
 
   .nav-link{
     padding: 0 1.5rem !important;
+  }
+
+  .accordian-answer{
+    font-size: large;
   }
 
 }
@@ -540,6 +560,9 @@
   font-size: medium;
   font-weight: bold;
   color: #2a2a2a !important;
+}
+.accordian-answer-lastline{
+  margin-bottom: 0 !important;
 }
 
 /* Nav Bar */
@@ -791,4 +814,12 @@ body.dark {
   font-weight: 500;
   margin-bottom: 30px;
   color:dimgrey !important;
+}
+
+/*home image carousel*/
+
+.image-carousel{
+  height: 300px;
+  width: 100%;
+  object-fit:cover;
 }
