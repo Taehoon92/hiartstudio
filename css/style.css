@@ -813,3 +813,8 @@ body.dark {
   width: 100%;
   object-fit:cover;
 }
+
+/*하이퍼링크 밑줄 제거*/
+#page a {
+  text-decoration: none;
+}
