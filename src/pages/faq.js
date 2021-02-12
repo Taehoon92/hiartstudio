@@ -53,7 +53,7 @@ export default function faq() {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> How much for classes? </h2>
+                <h2 className="accordianquestion"> How much for classes? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -77,7 +77,7 @@ export default function faq() {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> Which classes is for me?  </h2>
+                <h2 className="accordianquestion"> Which classes is for me?  </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
@@ -110,7 +110,7 @@ export default function faq() {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> How can I book make up lesson? </h2>
+                <h2 className="accordianquestion"> How can I book make up lesson? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="2">
@@ -199,7 +199,7 @@ export default function faq() {
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> Can I have a trial lessons? </h2>
+                <h2 className="accordianquestion"> Can I have a trial lessons? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="4">
@@ -226,7 +226,7 @@ export default function faq() {
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="5">
                 
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> How much pay for your classes? </h2>
+                <h2 className="accordianquestion"> How much pay for your classes? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="5">
@@ -260,7 +260,7 @@ export default function faq() {
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="6">
                 
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> How many students and teachers? </h2>
+                <h2 className="accordianquestion"> How many students and teachers? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="6">
@@ -287,7 +287,7 @@ export default function faq() {
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="7">
                 
-                <h2 className="accordianquestion"> <i className="fas fa-plus fa"></i> Opening on public holiday? </h2>
+                <h2 className="accordianquestion"> Opening on public holiday? </h2>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="7">
