@@ -84,6 +84,10 @@
   .accordian-answer{
     font-size: small;
   }
+
+  .logo{
+    padding-right: 0 !important;
+  }
 }
 
 @media (min-width: 576px) {
@@ -639,6 +643,7 @@
   display:inline-block !important;
   top: 15px;
   z-index: 100;
+  padding-right: 15px;
 }
 
 
