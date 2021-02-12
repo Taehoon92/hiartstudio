@@ -12,7 +12,7 @@ export default function faq() {
     <div id="page">
       <div className="navbar">
         <div className="navbar-subheading-bottom container">
-          <Navbar.Brand href="/" className="logo container">
+          <Navbar.Brand href="/" className="logo">
             <img
               src='../../logo2.png'
               className="d-inline-block align-top"

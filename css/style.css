@@ -58,7 +58,7 @@
   }
 
   .navbar-brand {
-    max-width:60% !important;
+    max-width:200px !important;
     align-content: right;
   }
 
@@ -643,7 +643,8 @@
   display:inline-block !important;
   top: 15px;
   z-index: 100;
-  padding-right: 15px;
+  padding-right: 10px;
+  position:relative;
 }
 
 
@@ -686,7 +687,7 @@ p.footer-box-connect{
   float:right;
 }
 
-.footer-logoo-colour{
+.footer-logo-colour{
   color:#989898;
 }
 
