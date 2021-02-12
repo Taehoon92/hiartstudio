@@ -694,8 +694,12 @@ p.footer-box-connect{
   color:#f5f5f5;
 }
 
-.footer-box a:hover, .footer-box a:active, .footer-box a:visited {
+.footer-box a:active, .footer-box a:visited {
   color:#f5f5f5;
+}
+
+.footer-box a:hover {
+  color:#ff408d;
 }
     
 /* Dark Mode */
