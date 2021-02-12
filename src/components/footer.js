@@ -22,7 +22,7 @@ const Footer = ({ siteTitle }) => (
             <div className="row">
 
                 <div className="footer-box col-md-5">
-                    <a href="https://g.page/hiartstudio?share">
+                    <a href="https://g.page/hiartstudio?share" target="_blank">
                         <FontAwesomeIcon icon = {faMapMarkedAlt} />
                         <span>&nbsp;&nbsp;5 Saville St. Eight Mile Plains QLD 4113</span>
                     </a>
