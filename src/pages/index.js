@@ -26,7 +26,7 @@ const IndexPage = () => (
 	<div id ="page" className="index">
 
 		<div className="navbar">
-			<div className="navbar-subheading-bottom container">
+			<div className="navbar-subheading-bottom">
 				<Navbar.Brand href="/" className="logo">
 					<img
 						src='../../logo2.png'
@@ -41,7 +41,7 @@ const IndexPage = () => (
 					VISUAL ART TUTORIAL SPECIALIST
 					</p>
 				</div>*/}
-				<div className="navbar-subheading-bottom-menu container">
+				<div className="navbar-subheading-bottom-menu">
 					<Nav.Link href="/about">About</Nav.Link>
 					<Nav.Link href="/class">Class</Nav.Link>
 					<Nav.Link href="/gallery">Artworks</Nav.Link>
