@@ -89,15 +89,19 @@ export default function Class() {
                 - Anime/Portrait/Modern illustration/Digital drawing lesson available too.
               </p>
 
+              <div className = "blank-space">
+              </div>
+
             </div>
 
-            
+            {/*
             <div className="col-2 class-right-col">
 
             </div>
+            */}
 
-            <div className = "blank-space">
-            </div>
+            
+
           </div>
         </div>
 

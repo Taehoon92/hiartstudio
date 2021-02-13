@@ -77,20 +77,23 @@ export default function About() {
                 6. Purchasing agent for art supplies - The cheapest price match available. 
               </p>
 
-            </div>
+              <div className = "blank-space">
+              </div>
 
+            </div>
+            
+            {/*\
             <div className="col-md-5">
-              {/*\
+              
               <img className="aboutus-image" src='/aboutus-01.jpg' />
               <img className="aboutus-image" src='/aboutus-02.jpg' />
               <img className="aboutus-image" src='/aboutus-03.jpg' />
               <img className="aboutus-image" src='/aboutus-04.jpeg' />
               <img className="aboutus-image" src='/aboutus-05.jpg' />
-              */}
             </div>
+            */}
 
-            <div className = "blank-space">
-            </div>
+            
           </div>
         </div>
 

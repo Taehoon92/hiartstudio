@@ -72,10 +72,6 @@ export default function Gallery() {
           <img className="banner-image-web" src="/banner-web.jpg"/>
           <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
         </div>
-        
-
-        <div className="blank-space"></div>
-
 
         <div className="container gallery-desktop">
 
