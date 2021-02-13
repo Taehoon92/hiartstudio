@@ -1098,5 +1098,4 @@ body.dark {
 /*페이지 오른편에 흰색 바 제거*/
 html,body{
   overflow-x: hidden !important;
-  overflow-y: hidden !important;
 }
