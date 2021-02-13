@@ -36,7 +36,8 @@ export default function Class() {
             <h1 className="container">Class Information</h1>
             <p className="container banner-subheading">Please find the information about our classes and curriculum</p>
           </div>
-          <img src='/banner.jpg' />
+          <img className="banner-image-web" src="/banner-test.jpg"/>
+          <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
         </div>
 
         <div className="container">

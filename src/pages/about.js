@@ -38,7 +38,8 @@ export default function About() {
             <h1 className="container">About us</h1>
             <p className="container">Take a look at our art studio</p>
           </div>
-          <img src='/banner.jpg' />
+          <img className="banner-image-web" src="/banner-test.jpg"/>
+          <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
         </div>
 
         <div className="container">
