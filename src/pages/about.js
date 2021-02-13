@@ -42,7 +42,7 @@ export default function About() {
           <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
         </div>
 
-        <div className="container">
+        <div className="container content-padding">
 
           <h3 className="aboutus-quote-margin">
             "The best art experience with reasonable price."

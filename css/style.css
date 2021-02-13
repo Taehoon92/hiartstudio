@@ -129,6 +129,11 @@
     padding-top: 10px !important;
     font-size: 4vw;
   }
+
+  .content-padding {
+    padding-left :15px !important;
+    padding-right: 15px !important;
+  }
 }
 
 @media (min-width: 576px) {
