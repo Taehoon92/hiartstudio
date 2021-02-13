@@ -26,7 +26,7 @@ const IndexPage = () => (
 	<div id ="page" className="index">
 
 		<div className="navbar">
-			<div className="navbar-subheading-bottom">
+			<div className="navbar-subheading-bottom container">
 				<Navbar.Brand href="/" className="logo">
 					<img
 						src='../../logo2.png'
