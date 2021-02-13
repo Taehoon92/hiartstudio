@@ -47,7 +47,7 @@ export default function faq() {
         </div>
         */}
 
-        <div className ="container accordianfont">
+        <div className ="container accordianfont content-padding">
           <Accordion>
 
             <Card>

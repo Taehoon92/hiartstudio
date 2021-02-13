@@ -40,7 +40,7 @@ export default function Class() {
           <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
         </div>
 
-        <div className="container">
+        <div className="container content-padding">
 
           <div className="row">
             <div className="col-md-10 class-left-col">
