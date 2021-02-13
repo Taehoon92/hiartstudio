@@ -36,8 +36,8 @@ export default function Class() {
             <h1 className="container">Class Information</h1>
             <p className="container banner-subheading">Please find the information about our classes and curriculum</p>
           </div>
-          <img className="banner-image-web" src="/banner-test.jpg"/>
-          <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
+          <img className="banner-image-web" src="/banner-web.jpg"/>
+          <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
         </div>
 
         <div className="container content-padding">
@@ -91,8 +91,9 @@ export default function Class() {
 
             </div>
 
+            
             <div className="col-2 class-right-col">
-                <img className="class-image" src='/class-01.jpg' />
+
             </div>
 
             <div className = "blank-space">

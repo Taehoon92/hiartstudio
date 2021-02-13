@@ -38,8 +38,8 @@ export default function About() {
             <h1 className="container">About us</h1>
             <p className="container">Take a look at our art studio</p>
           </div>
-          <img className="banner-image-web" src="/banner-test.jpg"/>
-          <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
+          <img className="banner-image-web" src="/banner-web.jpg"/>
+          <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
         </div>
 
         <div className="container content-padding">
@@ -80,11 +80,13 @@ export default function About() {
             </div>
 
             <div className="col-md-5">
+              {/*\
               <img className="aboutus-image" src='/aboutus-01.jpg' />
               <img className="aboutus-image" src='/aboutus-02.jpg' />
               <img className="aboutus-image" src='/aboutus-03.jpg' />
               <img className="aboutus-image" src='/aboutus-04.jpeg' />
               <img className="aboutus-image" src='/aboutus-05.jpg' />
+              */}
             </div>
 
             <div className = "blank-space">

@@ -69,8 +69,8 @@ export default function Gallery() {
             <h1 className="container">Artworks</h1>
             <p className="container">Take a peek at our proud students' works</p>
           </div>
-          <img className="banner-image-web" src="/banner-test.jpg"/>
-          <img className="banner-image-mobile" src="/banner-test-mobile.jpg"/>
+          <img className="banner-image-web" src="/banner-web.jpg"/>
+          <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
         </div>
         
 

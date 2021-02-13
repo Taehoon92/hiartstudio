@@ -47,6 +47,10 @@ export default function faq() {
         </div>
         */}
 
+          <h3 className="faq-quote-margin">
+            "How can we help you?"
+          </h3>
+
         <div className ="container accordianfont content-padding">
           <Accordion>
 
