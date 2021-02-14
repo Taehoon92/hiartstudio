@@ -6,9 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
 
-//import IronImage from 'react-image-lazy-load-component';
-
-
+import Media from 'react-media';
 
 export default function Gallery() {
 
@@ -26,12 +24,18 @@ export default function Gallery() {
   }`)
   
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
-  
-  const isMobile = window.innerWidth <576;
-  
+  let isMobile = 1;
+
+
+  if (typeof window !== `undefined`) {
+    isMobile = window.innerWidth <576;
+
+  }  
 
   const handleResize = () => {
-    const isMobile = window.innerWidth <576;
+    if (typeof window !== `undefined`) {
+      isMobile = window.innerWidth <576;
+    }
   }
 
   useEffect(() => {
@@ -40,6 +44,7 @@ export default function Gallery() {
       window.removeEventListener('resize', handleResize);
     }
   }, []);
+  
 
   if(isMobile) {
     return (
