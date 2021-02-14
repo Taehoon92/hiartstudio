@@ -24,6 +24,19 @@ module.exports = {
         access_token : "IGQVJYbUtEcE1IaTh1ekEtTV83WVZATeVFRbUI0VXNjT2VMSHBDTXowa0FkUU9ycVI3ZAWp6Q3d6c3JlbVZAQbUVickxHTVAydzRtdHdKcXE4QUtWa3NlbDJlNzItRzg4M1I3QnN3N3hHRWN3X0RPUjRESAZDZD"
       }
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+          plugins: [
+              {
+                  resolve: `gatsby-remark-images-native-lazy-load`,
+                  options: {
+                      loading: "lazy" // "lazy" | "eager" | "auto"
+                      }
+                  }
+          ],
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -38,6 +51,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-dark-mode`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
