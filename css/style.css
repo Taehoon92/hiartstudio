@@ -62,9 +62,7 @@
     align-content: right;
   }
 
-  .gallery-desktop {
-    /*display:none;*/
-  }
+
 
   .col-12 {
     margin-top : 10px !important;
@@ -1104,6 +1102,6 @@ body.dark {
 }
 
 /*페이지 오른편에 흰색 바 제거*/
-.navbar, .page-wrapper, .footer-setting{
+.navbar, #page-wrapper, .footer-settings{
   overflow-x: hidden !important;
 }
