@@ -34,7 +34,7 @@ export default function Gallery() {
           id
           localFile {
             childImageSharp {
-              resize(width: 500) {
+              resize(width: 1000) {
                 src
               }
             }
@@ -385,10 +385,10 @@ export default function Gallery() {
 
             
             <div className="gallery-box col-4">
-              <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
-                <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
+              <a href={data.allInstagramContent.edges[3].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[3].node.media_url} />
                 <div className="gallery-box-description-layer">
-                  <p className="gallery-box-description">{data.allInstagramContent.edges[0].node.caption}</p>
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[3].node.caption}</p>
                 </div>
               </a>
             </div>
