@@ -5,13 +5,43 @@ import Footer from "../components/footer"
 import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
+import addGallery from "../components/addGallery"
 
 import Media from 'react-media';
 
 export default function Gallery() {
+/*
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    allInstagramContent {
+      edges {
+        node {
+          media_url
+          caption
+          permalink
+        }
+      }
+    }
+  }`)*/
+
 
   const data = useStaticQuery(graphql`
   query MyQuery {
+    allInstaNode {
+      edges {
+        node {
+          caption
+          id
+          localFile {
+            childImageSharp {
+              resize(width: 500) {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
     allInstagramContent {
       edges {
         node {
@@ -187,6 +217,41 @@ export default function Gallery() {
 
         <div className="container gallery-desktop">
           <div className = "row"> 
+
+
+
+
+          <div className="gallery-box col-4">
+              <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[0].node.id} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstaNode.edges[0].node.localFile.childImageSharp.resize.src} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstaNode.edges[0].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[1].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[1].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[2].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[2].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[2].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
+
+
+
+
             <div className="gallery-box col-4">
               <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
                 <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
