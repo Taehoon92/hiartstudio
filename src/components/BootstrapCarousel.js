@@ -7,53 +7,27 @@ export class BootstrapCarousel extends Component {
     render() {  
         return (  
 
-                <div>  
-                    <div className='container' >  
-                        <div className="row title" style={{ marginBottom: "20px" }} >  
-                        </div>  
-                    </div>  
-                <div className='container' >  
+        <Carousel className="carousel-image container">  
 
-        <Carousel>  
-
-            <Carousel.Item style={{'height':"300px"}} >  
-
+            <Carousel.Item>  
                 <img
-                className="d-block w-100 image-carousel"  
-                src={'/banner.jpg'}  />  
-
-                <Carousel.Caption>    
-                </Carousel.Caption>  
-
+                className=""  
+                src={'/banner-web.jpg'}  />  
             </Carousel.Item  >  
 
-            <Carousel.Item style={{'height':"300px"}}>  
-
+            <Carousel.Item>  
                 <img
-                className="d-block w-100 image-carousel"  
-                src={'/banner.jpg'}    />  
-
-                <Carousel.Caption>   
-                </Carousel.Caption>  
-
+                className=""  
+                src={'/banner-web.jpg'}    />  
             </Carousel.Item>  
 
-            <Carousel.Item style={{'height':"300px"}}>  
-
+            <Carousel.Item>  
                 <img 
-                className="d-block w-100 image-carousel"  
-                src={'/banner.jpg'}   />  
-
-                <Carousel.Caption>  
-                </Carousel.Caption>  
-
+                className=""  
+                src={'/banner-web.jpg'}   />  
             </Carousel.Item>  
 
         </Carousel>  
-
-        </div>  
-
-        </div>
         
         )  
 
