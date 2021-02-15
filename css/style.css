@@ -80,7 +80,7 @@
   }
 
   .accordian-answer{
-    font-size: small;
+    font-size: medium;
   }
 
   .logo{
@@ -235,7 +235,7 @@
   }
 
   .accordian-answer{
-    font-size: small;
+    font-size: medium;
   }
   .container {
     padding-left:0px !important;
@@ -408,6 +408,10 @@
 
   .faq-quote-margin{
     font-size: xx-large;
+  }
+
+  .footer-box-email{
+    padding-left: 0 !important;
   }
 }
 
@@ -797,6 +801,9 @@
 
 .gallery-mobile p{
   margin-bottom:0px !important;
+  background-color: #dbdbdb;
+  border-bottom-left-radius: 20px;
+  font-weight: 500;
 }
 
 /*faq accordian font*/

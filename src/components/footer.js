@@ -26,7 +26,7 @@ const Footer = ({ siteTitle }) => (
                     </a>
                 </div>
 
-                <div className="footer-box col-md-4">
+                <div className="footer-box col-md-4 footer-box-email">
                     <a href="mailto:hiartstudiobrisbane@gmail.com">
                         <FontAwesomeIcon icon = {faEnvelope} />
                         <span>&nbsp;&nbsp;hiartstudiobrisbane@gmail.com</span>
