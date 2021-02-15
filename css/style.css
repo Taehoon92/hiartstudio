@@ -19,7 +19,7 @@
     padding-right:15px !important;  
   }
 
-  .banner-image {
+  .banner-image{
     margin-left:auto;
     margin-right:auto;
     background-color: white;
@@ -544,7 +544,7 @@
     /*width: 1160px;*/
   }
 
-  .banner-image {
+  .banner-image{
     margin-left:auto;
     margin-right:auto;
     height: 300px;
@@ -654,6 +654,13 @@
   overflow: hidden;
 }
 */
+
+.carousel-image{
+  margin-top: 4vw !important;
+  margin-bottom: 4vw !important;
+  width: 100%;
+  overflow: hidden;
+}
 
 .banner-image{
   
@@ -1093,14 +1100,6 @@ body.dark {
 
 .class-text{
   color:dimgrey !important;
-}
-
-/*home image carousel*/
-
-.image-carousel{
-  height: 300px;
-  width: 100%;
-  object-fit:cover;
 }
 
 /*하이퍼링크 밑줄 제거*/
