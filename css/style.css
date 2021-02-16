@@ -741,10 +741,9 @@
 }
 
 /*porfolio */
-.gallery-box{
-  margin: 0px 0px;
-  display: inline-block;
-  position:relative;
+
+
+.gallery-desktop .gallery-box{
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -753,7 +752,14 @@
        animation: fadein 2s;
 }
 
-.gallery-box:hover {
+.gallery-box{
+  margin: 0px 0px;
+  display: inline-block;
+  position:relative;
+}
+
+
+.gallery-desktop .gallery-box:hover {
   transform: scale(1.05);
   transition-duration:0.5s;
 }
@@ -799,6 +805,10 @@
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 
+
+}
+
+.gallery-desktop .gallery-box-description-layer {
   border-radius: 20px 20px 20px 20px;
 
 }
@@ -820,6 +830,10 @@
 .gallery-box img {
   margin:0px;
 
+
+}
+
+.gallery-desktop .gallery-box img {
   border-radius: 15px 15px 15px 15px;
 
 }
