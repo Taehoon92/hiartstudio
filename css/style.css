@@ -745,6 +745,17 @@
   margin: 0px 0px;
   display: inline-block;
   position:relative;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+.gallery-box:hover {
+  transform: scale(1.05);
+  transition-duration:0.5s;
 }
 
 .col-4 {
@@ -768,6 +779,7 @@
   max-height: 350px;
   min-width: 200px;
   /*padding-top: 5px;*/
+
 }
 
 .gallery-box-description-layer {
@@ -786,6 +798,9 @@
 
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
+
+  border-radius: 20px 20px 20px 20px;
+
 }
 
 .gallery-box:hover .gallery-box-description-layer {
@@ -804,6 +819,9 @@
 
 .gallery-box img {
   margin:0px;
+
+  border-radius: 15px 15px 15px 15px;
+
 }
 
 .gallery-mobile p{
@@ -1110,4 +1128,59 @@ body.dark {
 /*페이지 오른편에 흰색 바 제거*/
 .navbar, #page-wrapper, .footer-settings{
   overflow-x: hidden !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
