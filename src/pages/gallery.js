@@ -10,7 +10,7 @@ import addGallery from "../components/addGallery"
 import Media from 'react-media';
 
 export default function Gallery() {
-/*
+
   const data = useStaticQuery(graphql`
   query MyQuery {
     allInstagramContent {
@@ -22,9 +22,9 @@ export default function Gallery() {
         }
       }
     }
-  }`)*/
+  }`)
 
-
+  /*
   const data = useStaticQuery(graphql`
   query MyQuery {
     allInstaNode {
@@ -37,8 +37,13 @@ export default function Gallery() {
       }
     }
   }`)
+  */
   
-  //let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
+  // let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
+  // console.log(arrayOfInstaImages)
+  // console.log('CHECK')
+
+
   let isMobile = 1;
 
 
@@ -95,6 +100,7 @@ export default function Gallery() {
 
         <div className="container gallery-mobile">
 
+          {/*
           <div className="gallery-box col-12">
             <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[0].node.id} target="_blank"> 
               <img className="gallery-box-image" src={data.allInstaNode.edges[0].node.preview} />
@@ -157,11 +163,12 @@ export default function Gallery() {
             </a>
             <p>{data.allInstaNode.edges[8].node.caption}</p>
           </div>
+          */}
 
 
 
 
-          {/*
+          
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
               <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
@@ -226,7 +233,7 @@ export default function Gallery() {
             <p>{data.allInstagramContent.edges[8].node.caption}</p>
           </div>
 
-          */}
+          
         </div> 
         <div className="blank-space"></div>
         
@@ -275,7 +282,7 @@ export default function Gallery() {
 
 
 
-
+            {/*
             <div className="gallery-box col-4">
               <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[0].node.id} target="_blank"> 
                 <img className="gallery-box-image" src={data.allInstaNode.edges[0].node.preview} />
@@ -357,8 +364,6 @@ export default function Gallery() {
               </a>
             </div>
 
-            {/* Testing */}
-
             <div className="gallery-box col-4">
               <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[7].node.id} target="_blank"> 
                 <img className="gallery-box-image" src={data.allInstaNode.edges[7].node.preview} />
@@ -368,7 +373,17 @@ export default function Gallery() {
               </a>
             </div>
 
-{/*
+            */}
+
+            <div className="gallery-box col-4">
+              <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
+                <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
+                <div className="gallery-box-description-layer">
+                  <p className="gallery-box-description">{data.allInstagramContent.edges[0].node.caption}</p>
+                </div>
+              </a>
+            </div>
+
             <div className="gallery-box col-4">
               <a href={data.allInstagramContent.edges[1].node.permalink} target="_blank"> 
                 <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.media_url} />
@@ -440,8 +455,6 @@ export default function Gallery() {
                 </div>
               </a>
             </div>
-
-            */}
 
           </div>
         </div>
