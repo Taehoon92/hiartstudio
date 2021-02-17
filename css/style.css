@@ -845,6 +845,15 @@
   font-weight: 500;
 }
 
+.gallery-box-loadmore {
+  background-color: #fff7f0;
+  margin-top: 20px;
+  border: 1px solid #e2d0bf;
+  border-radius: 5px;
+  height: 40px;
+  width: 130px;
+}
+
 /*faq accordian font*/
 .accordianfont{
   text-align: left !important;
