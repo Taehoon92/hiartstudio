@@ -9,6 +9,12 @@ import addGallery from "../components/addGallery"
 
 import Media from 'react-media';
 
+
+function loadmore (tmp) {
+  console.log("clickkkkk");
+  console.log("click"+{tmp});
+}
+
 export default function Gallery() {
 
   const data = useStaticQuery(graphql`
@@ -280,8 +286,6 @@ export default function Gallery() {
         <div className="container gallery-desktop">
           <div className = "row"> 
 
-
-
             {/*
             <div className="gallery-box col-4">
               <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[0].node.id} target="_blank"> 
@@ -457,6 +461,8 @@ export default function Gallery() {
             </div>
 
           </div>
+
+          <button className="glaaery-boy-loadmore" onClick={() => loadmore(isMobile)}>LOAD MORE</button>
         </div>
 
         <div className="blank-space"></div>
