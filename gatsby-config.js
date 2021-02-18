@@ -17,13 +17,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    /*
     {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `45081175589`,
       },
     },
-
+    */
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
