@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
 import addGallery from "../components/addGallery"
+import {isMobileOnly} from 'react-device-detect'
 
 import Media from 'react-media';
 
@@ -35,34 +36,24 @@ export default function Gallery() {
       }
     }
   }`)
-
-  /*
-  const data = useStaticQuery(graphql`
-  query MyQuery {
-    allInstaNode {
-      edges {
-        node {
-          caption
-          id
-          preview
-        }
-      }
-    }
-  }`)
-  */
   
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
-  let isMobile = 0;
-
-
+  let isMobileResize = 0;
+  
+  if(isMobileOnly) {
+    isMobileResize = 1;
+    console.log("isMobileOnly : " + isMobileOnly );
+  }
+ 
   if (typeof window !== `undefined`) {
-    isMobile = window.innerWidth <576;
+    isMobileResize = window.innerWidth <576;
+    console.log("initial value : " + isMobileResize);
   }  
 
   const handleResize = () => {
     if (typeof window !== `undefined`) {
-      isMobile = window.innerWidth <576;
-      console.log(isMobile);
+      isMobileResize = window.innerWidth <576;
+      console.log(isMobileResize);
     }
   }
 
@@ -74,7 +65,7 @@ export default function Gallery() {
   }, []);
   
 
-  if(isMobile) {
+  if(isMobileResize) {
     return (
       <div id="page">
       <div className="navbar">
@@ -106,77 +97,7 @@ export default function Gallery() {
           <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
         </div>
 
-        <div className="container gallery-mobile">
-
-          {/*
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[0].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[0].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[0].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[1].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[1].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[1].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[2].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[2].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[2].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[3].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[3].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[3].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[4].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[4].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[4].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[5].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[5].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[5].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[6].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[6].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[6].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[7].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[7].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[7].node.caption}</p>
-          </div>
-
-          <div className="gallery-box col-12">
-            <a href={"https://www.instagram.com/p/"+data.allInstaNode.edges[8].node.id} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstaNode.edges[8].node.preview} />
-            </a>
-            <p>{data.allInstaNode.edges[8].node.caption}</p>
-          </div>
-          */}
-
-
-
-
-          
+        <div className="container gallery-mobile">        
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
               <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
@@ -464,7 +385,7 @@ export default function Gallery() {
 
           </div>
 
-          <button className="glaaery-boy-loadmore" onClick={() => loadmore(isMobile)}>LOAD MORE</button>
+          <button className="glaaery-boy-loadmore" onClick={() => loadmore()}>LOAD MORE</button>
         </div>
 
         <div className="blank-space"></div>
