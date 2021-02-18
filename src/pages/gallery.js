@@ -54,17 +54,17 @@ export default function Gallery() {
   }`)
   
   let arrayOfInstaImages = _get(data, 'allInstagramContent.edges.node')
-  let isMobile = 1;
+  let isMobile = 0;
 
 
   if (typeof window !== `undefined`) {
     isMobile = window.innerWidth <576;
-
   }  
 
   const handleResize = () => {
     if (typeof window !== `undefined`) {
       isMobile = window.innerWidth <576;
+      console.log(isMobile);
     }
   }
 
