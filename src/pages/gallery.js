@@ -13,6 +13,12 @@ import Media from 'react-media';
 function loadmore (tmp) {
   console.log("clickkkkk");
   console.log("click"+{tmp});
+  return (
+    <div>
+      <p>TESTTEST</p>
+    </div>
+
+  );
 }
 
 export default function Gallery() {
@@ -177,21 +183,21 @@ export default function Gallery() {
           
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[0].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[0].node.media_url} />
             </a>
             <p>{data.allInstagramContent.edges[0].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[1].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[1].node.media_url} />
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[1].node.media_url} />
             </a>
             <p>{data.allInstagramContent.edges[1].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[2].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[2].node.media_url} />
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[2].node.media_url} />
 
             </a>
             <p>{data.allInstagramContent.edges[2].node.caption}</p>
@@ -199,45 +205,45 @@ export default function Gallery() {
           
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[3].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[3].node.media_url} loading="lazy"/>
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[3].node.media_url} loading="lazy"/>
             </a>
             <p>{data.allInstagramContent.edges[3].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[4].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[4].node.media_url} loading="lazy"/>
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[4].node.media_url} loading="lazy"/>
             </a>
             <p>{data.allInstagramContent.edges[4].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[5].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[5].node.media_url} loading="lazy"/>
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[5].node.media_url} loading="lazy"/>
             </a>
             <p>{data.allInstagramContent.edges[5].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[6].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[6].node.media_url} loading="lazy"/>
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[6].node.media_url} loading="lazy"/>
             </a>
             <p>{data.allInstagramContent.edges[6].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[7].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[7].node.media_url} loading="lazy"/>
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[7].node.media_url} loading="lazy"/>
             </a>
             <p>{data.allInstagramContent.edges[7].node.caption}</p>
           </div>
 
           <div className="gallery-box col-12">
             <a href={data.allInstagramContent.edges[8].node.permalink} target="_blank"> 
-              <img className="gallery-box-image" src={data.allInstagramContent.edges[8].node.media_url} loading="lazy"/>
+              <img loading="lazy" className="gallery-box-image" src={data.allInstagramContent.edges[8].node.media_url} loading="lazy"/>
             </a>
             <p>{data.allInstagramContent.edges[8].node.caption}</p>
-          </div>
+          </div>    
 
           
         </div> 
