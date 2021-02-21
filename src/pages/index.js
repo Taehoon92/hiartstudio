@@ -1,7 +1,6 @@
-import React, {useState} from "react"
+import React from "react"
 //import {Link} from "gatsby"
 //import Layout from "../components/layout"
-import Header from "../components/header"
 import Footer from "../components/footer"
 
 //게시판 table
@@ -16,7 +15,7 @@ import '../../vendors/popup/magnific-popup.css'
 
 import BootstrapCarousel from '../components/BootstrapCarousel'  
 
-import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
+import {Navbar, Nav}  from 'react-bootstrap'
 
 
 //const [isDarkMode, setIsDarkMode] = useState(() => false);

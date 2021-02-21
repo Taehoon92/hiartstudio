@@ -3,7 +3,7 @@ import '../../css/style.css'
 
 import Footer from "../components/footer"
 
-import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
+import {Navbar, Nav}  from 'react-bootstrap'
 
 
 export default function Class() {

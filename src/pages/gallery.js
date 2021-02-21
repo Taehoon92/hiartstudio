@@ -4,23 +4,11 @@ import Footer from "../components/footer"
 
 import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
-import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
+import {Navbar, Nav}  from 'react-bootstrap'
 import AddGallery from "../components/AddGallery"
 import {isMobileOnly} from 'react-device-detect'
 
-import Media from 'react-media';
 import InfiniteScroll from 'react-infinite-scroll-component';
-
-function loadmore (tmp) {
-  console.log("clickkkkk");
-  console.log("click"+{tmp});
-  return (
-    <div>
-      <p>TESTTEST</p>
-    </div>
-
-  );
-}
 
 export default function Gallery() {
 
@@ -53,11 +41,6 @@ export default function Gallery() {
     }
   }`)
 
-  console.log(data);
-  console.log("data");
-
-
-
   const [images, setImages] = useState(0);
   useEffect(() => {
     //const arrayOfInstaImages = _get(data, 'allInstagramContent.edges');
@@ -74,12 +57,12 @@ export default function Gallery() {
     isMobileResize = 1;
   }
  
-  if (typeof window !== `undefined`) {
+  if (typeof window != `undefined`) {
     isMobileResize = window.innerWidth <576;
   }  
 
   const handleResize = () => {
-    if (typeof window !== `undefined`) {
+    if (typeof window != `undefined`) {
       isMobileResize = window.innerWidth <576;
     }
   }
@@ -91,7 +74,7 @@ export default function Gallery() {
     }
   }, []);
 
-  if({images}.images.length != undefined){
+  if({images}.images.length !== undefined){
     if(isMobileResize) {
       return (
         <div id="page">

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types"
-import React, {useState, useEffect} from "react"
+import React from "react"
 
 import '../../css/style.css'
 
-import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
+import {Navbar, Nav}  from 'react-bootstrap'
 
 /*
 버튼부분
@@ -20,23 +20,6 @@ import {Navbar, Nav, NavDropdown}  from 'react-bootstrap'
 
 */
 const Header = ({ siteTitle }) => {
-  let websiteTheme
-  if (typeof window !== `undefined`) {
-    websiteTheme = window.__theme
-  }
-
-  const [theme, setTheme] = useState(websiteTheme)
-
-  useEffect(() => {
-    setTheme(window.__theme)
-    window.__onThemeChange = () => {
-      setTheme(window.__theme)
-    }
-  }, [])
-
-  const ThemeToggle = () => {
-    window.__setPreferredTheme(websiteTheme === 'dark' ? 'light' : 'dark')
-  }
 
   return (
     <div id="navbar">
