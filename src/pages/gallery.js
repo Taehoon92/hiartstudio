@@ -12,7 +12,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 export default function Gallery() {
 
-/*
+
   const data = useStaticQuery(graphql`
   query MyQuery {
     allInstagramContent (sort: {fields: timestamp, order: DESC}) {
@@ -26,8 +26,8 @@ export default function Gallery() {
     }
   }`)
   
-  */
-
+  
+/*
   const data = useStaticQuery(graphql`
   query MyQuery {
     allInstaNode(sort: {fields: timestamp, order: DESC}) {
@@ -40,13 +40,13 @@ export default function Gallery() {
       }
     }
   }`)
-
+*/
   const [images, setImages] = useState(0);
   useEffect(() => {
     //const arrayOfInstaImages = _get(data, 'allInstagramContent.edges');
 
-    //setImages(_get(data, 'allInstagramContent.edges'));    
-    setImages(_get(data, 'allInstaNode.edges'));
+    setImages(_get(data, 'allInstagramContent.edges'));    
+    //setImages(_get(data, 'allInstaNode.edges'));
   },[])
   
 
@@ -110,7 +110,8 @@ export default function Gallery() {
           <div className="container gallery-mobile">
             <div className = "row">               
                 {{images}.images.map(image => (
-                  <AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
+                  //<AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
+                  <AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.permalink} media_url={image.node.media_url}/>          
                 ))}
             </div>
           </div>
