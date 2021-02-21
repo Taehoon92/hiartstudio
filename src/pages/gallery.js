@@ -159,7 +159,9 @@ export default function Gallery() {
           <div className="container gallery-desktop">
             <div className = "row">               
                 {{images}.images.map(image => (
-                  <AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
+                  //<AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
+                  <AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.permalink} media_url={image.node.media_url}/>          
+
                   ))}
             </div>
           </div>
