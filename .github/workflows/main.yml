@@ -10,4 +10,5 @@ jobs:
     steps:
       - name: Trigger our build wehook on Netlify
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
-        env: ${{ secrets.NETLIFY_CRON_BUILD_HOOK }}
+        env: 
+          TOKEN: ${{ secrets.NETLIFY_CRON_BUILD_HOOK }}
