@@ -9,7 +9,7 @@ import AddGallery from "../components/AddGallery"
 import {isMobileOnly} from 'react-device-detect'
 
 import Media from 'react-media';
-
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 function loadmore (tmp) {
   console.log("clickkkkk");
@@ -24,7 +24,7 @@ function loadmore (tmp) {
 
 export default function Gallery() {
 
-
+/*
   const data = useStaticQuery(graphql`
   query MyQuery {
     allInstagramContent (sort: {fields: timestamp, order: DESC}) {
@@ -38,32 +38,36 @@ export default function Gallery() {
     }
   }`)
   
-  
-/*
+  */
+
   const data = useStaticQuery(graphql`
-    query MyQuery {
-      allInstaNode(sort: {fields: timestamp, order: DESC}) {
-        edges {
-          node {
-            caption
-            original
-            id
-          }
+  query MyQuery {
+    allInstaNode(sort: {fields: timestamp, order: DESC}) {
+      edges {
+        node {
+          caption
+          original
+          id
         }
       }
     }
   }`)
-  */
+
+  console.log(data);
+  console.log("data");
+
+
 
   const [images, setImages] = useState(0);
   useEffect(() => {
     //const arrayOfInstaImages = _get(data, 'allInstagramContent.edges');
 
-    //setImages(_get(data, 'allInstagramContent.edges'));
+    //setImages(_get(data, 'allInstagramContent.edges'));    
     setImages(_get(data, 'allInstaNode.edges'));
   },[])
   
-  console.log(images);
+
+
   let isMobileResize = 0;
 
   if(isMobileOnly) {
@@ -120,10 +124,10 @@ export default function Gallery() {
             <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
           </div>
   
-          <div className="container gallery-desktop">
+          <div className="container gallery-mobile">
             <div className = "row">               
                 {{images}.images.map(image => (
-                  <AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.permalink} media_url={image.node.media_url}/>          
+                  <AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
                 ))}
             </div>
           </div>
@@ -167,12 +171,12 @@ export default function Gallery() {
             <img className="banner-image-web" src="/banner-web.jpg"/>
             <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
           </div>
-  
+
           <div className="container gallery-desktop">
             <div className = "row">               
                 {{images}.images.map(image => (
-                  <AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.permalink} media_url={image.node.media_url}/>          
-                ))}
+                  <AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
+                  ))}
             </div>
           </div>
   
