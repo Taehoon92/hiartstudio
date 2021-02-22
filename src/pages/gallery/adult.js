@@ -4,7 +4,7 @@ import Footer from "../../components/footer"
 
 import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
-import {Navbar, Nav}  from 'react-bootstrap'
+import {Navbar, Nav, Button}  from 'react-bootstrap'
 import AddGallery from "../../components/AddGallery"
 import {isMobileOnly} from 'react-device-detect'
 
@@ -15,7 +15,7 @@ export default function Gallery() {
 
   const data = useStaticQuery(graphql`
   query MyQueryAdult {
-    allInstagramContent (filter: {caption: {glob: "Adult*"}}, sort: {fields: timestamp, order: DESC}) {
+    allInstagramContent (filter: {caption: {glob: "A*"}}, sort: {fields: timestamp, order: DESC}) {
       edges {
         node {
           media_url
@@ -94,6 +94,17 @@ export default function Gallery() {
           </div>
   
           <div className="container gallery-mobile">
+            <div className="filter-button">
+              <a href="/gallery">
+                <Button variant="outline-primary">All</Button>
+              </a>
+              <a href="/gallery/adult">
+                <Button variant="primary">Adult</Button>
+              </a>
+              <a href="/gallery/high">
+                <Button variant="outline-primary">High School</Button>
+              </a>
+            </div>
             <div className = "row">               
                 {{images}.images.map(image => (
                   //<AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>         
@@ -143,6 +154,17 @@ export default function Gallery() {
           </div>
 
           <div className="container gallery-desktop">
+            <div className="filter-button">
+              <a href="/gallery">
+                <Button variant="outline-primary">All</Button>
+              </a>
+              <a href="/gallery/adult">
+                <Button variant="primary">Adult</Button>
+              </a>
+              <a href="/gallery/high">
+                <Button variant="outline-primary">High School</Button>
+              </a>
+            </div>
             <div className = "row">               
                 {{images}.images.map(image => (
                   //<AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          

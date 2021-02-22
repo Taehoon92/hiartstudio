@@ -854,6 +854,10 @@
   width: 130px;
 }
 
+.filter-button .btn-outline-primary:hover {
+  background-color : #007bff; 
+}
+
 /*faq accordian font*/
 .accordianfont{
   text-align: left !important;

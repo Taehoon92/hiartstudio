@@ -14,6 +14,7 @@
     "bootstrap": "^4.5.3",
     "dotenv": "^8.2.0",
     "expo-dark-mode-switch": "0.0.1",
+    "firebase-admin": "^9.5.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.9.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
