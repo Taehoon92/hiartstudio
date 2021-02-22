@@ -877,6 +877,20 @@
   margin-bottom: 10px !important;
 }
 
+/*
+
+.btn-outline-primary:focus .btn-outline-primary:active:focus .btn-outline-primary.active:focus,
+.btn-outline-primary.focus .btn-outline-primary:active.focus .btn-outline-primary.active.focus {
+    outline: none;
+}
+
+.btn-primary:focus .btn-primary:active:focus .btn-primary.active:focus,
+.btn-primary.focus .btn-primary:active.focus .btn-primary.active.focus {
+    outline: none;
+}
+
+*/
+
 /*faq accordian font*/
 .accordianfont{
   text-align: left !important;
