@@ -855,7 +855,26 @@
 }
 
 .filter-button .btn-outline-primary:hover {
-  background-color : #007bff; 
+  background-color : #ff408d !important;
+  color: white !important;
+}
+
+.btn-primary{
+  background-color: #ff408d !important;
+  border-color: #ff408d !important;
+  font-weight: 500 !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+.btn-outline-primary{
+  color: #222 !important;
+  font-weight: 400 !important;
+  border-color: #ff408d !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin-bottom: 10px !important;
 }
 
 /*faq accordian font*/

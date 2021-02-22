@@ -138,6 +138,9 @@ export default function Gallery() {
               <a href="/gallery/high">
                 <Button variant="outline-primary">High School</Button>
               </a>
+              <a href="/gallery/primary">
+                <Button variant="outline-primary">Primary</Button>
+              </a>
             </div>
             <div className = "row">               
                 {{images}.images.map(image => (
@@ -196,6 +199,9 @@ export default function Gallery() {
               </a>
               <a href="/gallery/high">
                 <Button variant="outline-primary">High School</Button>
+              </a>
+              <a href="/gallery/primaryp">
+                <Button variant="outline-primary">Primary</Button>
               </a>
             </div>
             <div className = "row">           

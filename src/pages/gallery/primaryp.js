@@ -14,8 +14,8 @@ export default function Gallery() {
 
 
   const data = useStaticQuery(graphql`
-  query MyQueryHigh {
-    allInstagramContent (filter: {caption: {glob: "H*"}}, sort: {fields: timestamp, order: DESC}) {
+  query MyQueryPrimary {
+    allInstagramContent (filter: {caption: {glob: "Pri*"}}, sort: {fields: timestamp, order: DESC}) {
       edges {
         node {
           media_url
@@ -102,10 +102,10 @@ export default function Gallery() {
                 <Button variant="outline-primary">Adult</Button>
               </a>
               <a href="/gallery/high">
-                <Button variant="primary">High School</Button>
+                <Button variant="outline-primary">High School</Button>
               </a>
               <a href="/gallery/primaryp">
-                <Button variant="outline-primary">Primary</Button>
+                <Button variant="primary">Primary</Button>
               </a>
             </div>
             <div className = "row">               
@@ -165,10 +165,10 @@ export default function Gallery() {
                 <Button variant="outline-primary">Adult</Button>
               </a>
               <a href="/gallery/high">
-                <Button variant="primary">High School</Button>
+                <Button variant="outline-primary">High School</Button>
               </a>
-              <a href="/gallery/primaryp">
-                <Button variant="outline-primary">Primary</Button>
+              <a href="/gallery/primary">
+                <Button variant="primary">Primary</Button>
               </a>
             </div>
             <div className = "row">               
