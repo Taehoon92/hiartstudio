@@ -48,8 +48,6 @@ export default function Gallery() {
     setImages(_get(data, 'allInstagramContent.edges'));    
     //setImages(_get(data, 'allInstaNode.edges'));
   },[])
-  
-
 
   let isMobileResize = 0;
 
@@ -66,6 +64,28 @@ export default function Gallery() {
       isMobileResize = window.innerWidth <576;
     }
   }
+
+  this.state = {
+    items: Array.from({length:10}),
+    hasMore: true
+
+  };
+
+
+  const fetchMoreData = () => {
+
+    if (state.items.length >= {images}.images.length) {
+      this.setState({ hasMore: false });
+      return;
+    }
+    // a fake async api call like which sends
+    // 20 more records in 1.5 secs
+    setTimeout(() => {
+      this.setState({
+        items: this.state.items.concat(Array.from({ length: 10 }))
+      });
+    }, 1000);
+  };
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
@@ -110,7 +130,7 @@ export default function Gallery() {
           <div className="container gallery-mobile">
             <div className = "row">               
                 {{images}.images.map(image => (
-                  //<AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
+                  //<AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>         
                   <AddGallery isMobile={true} caption={image.node.caption} permalink={image.node.permalink} media_url={image.node.media_url}/>          
                 ))}
             </div>
@@ -123,7 +143,6 @@ export default function Gallery() {
       </div>
       )
     }
-
     else {
       return (
         <div id="page">
@@ -157,12 +176,20 @@ export default function Gallery() {
           </div>
 
           <div className="container gallery-desktop">
-            <div className = "row">               
+            <div className = "row">
+              <InfiniteScroll
+                dataLength={{images}.images.length}
+                next={fetchMoreData}
+                hasMore={true}
+                loader={<p>loading</p>}
+                endMessage={<p>end</p>}
+              >               
                 {{images}.images.map(image => (
                   //<AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.id} media_url={image.node.original}/>          
                   <AddGallery isMobile={false} caption={image.node.caption} permalink={image.node.permalink} media_url={image.node.media_url}/>          
 
                   ))}
+              </InfiniteScroll>
             </div>
           </div>
   
