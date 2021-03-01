@@ -5,7 +5,6 @@ import Footer from "../components/footer"
 
 import {Navbar, Nav}  from 'react-bootstrap'
 
-import CarouselAbout from '../components/CarouselAboutBanner'  
 
 export default function About() {
   return (
@@ -34,12 +33,12 @@ export default function About() {
       <div id="page-wrapper">
 
         <div className="banner-image container">
-          <div className = "banner-text banner-about">
+          <div className = "banner-text">
             <h1 className="container">About us</h1>
             <p className="container">Take a look at our art studio</p>
           </div>
-          <CarouselAbout></CarouselAbout>
-          <img className="banner-image-web" src="/banner-about-web.jpg"/>
+          <img className="banner-image-web" src="/banner-web.jpg"/>
+          <img className="banner-image-mobile" src="/banner-mobile.jpg"/>
         </div>
 
         <div className="container content-padding">

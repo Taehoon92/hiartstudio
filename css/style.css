@@ -101,7 +101,7 @@
 
   .banner-text {
     height: 100%;
-    padding-top: 8vw;
+    padding-top: 13vw;
     
   }
 
@@ -112,6 +112,10 @@
   .banner-image-mobile {
     display:inline !important;
     margin-bottom:0px;
+  }
+
+  .about-carousel-banner {
+    display:inline !important;
   }
 
   .img {
@@ -146,6 +150,14 @@
     font-size: small;
     font-weight: 400;
     margin-bottom: 20px;
+  }
+
+  .about-carousel-banner .carousel-indicators{
+    display:none !important;
+  }
+
+  .banner-about {
+    height:67vw;
   }
 
   .class-heading-top{
@@ -1129,6 +1141,10 @@ body.dark {
 }
 
 .banner-image-mobile {
+  display:none;
+}
+
+.about-carousel-banner {
   display:none;
 }
 
