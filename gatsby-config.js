@@ -19,16 +19,10 @@ module.exports = {
     },
     
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `45081175589`,
-      },
-    },
-    
-    {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token : "IGQVJVanZAkbHpfR2k1SjBrSUY2Wlh0MWFyaEs4UjIzNmdzLUQ4SHhPbVBLMTZARcW95eHRtS0IwRHhDcTluYUI1bEQwSGdkUUVUaHh5U25RNTJYeF9BX0t5eVhyQW9TRndPZA1h2cjh3"
+        access_token : "IGQVJWem14V2FWbDl4U1BxRjdOUXA4UWVROXcyNWRaR2Nucl9mVTRPblA4bnlHeFNpUXBaZA1g5SzBHb0VUQS1SM0QtYkE3REV2WmpHYzBCNnBjak9URDRmZA2F2VFNiSDBsdHAyNlVB"
+        /* https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token= */
       }
     },
     {

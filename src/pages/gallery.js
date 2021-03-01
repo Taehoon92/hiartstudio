@@ -8,8 +8,6 @@ import {Navbar, Nav, Button}  from 'react-bootstrap'
 import AddGallery from "../components/AddGallery"
 import {isMobileOnly} from 'react-device-detect'
 
-import InfiniteScroll from 'react-infinite-scroll-component';
-
 export default function Gallery() {
 
 
@@ -26,27 +24,10 @@ export default function Gallery() {
     }
   }`)
   
-  
-/*
-  const data = useStaticQuery(graphql`
-  query MyQuery {
-    allInstaNode(sort: {fields: timestamp, order: DESC}) {
-      edges {
-        node {
-          caption
-          original
-          id
-        }
-      }
-    }
-  }`)
-*/
   const [images, setImages] = useState(0);
   useEffect(() => {
-    //const arrayOfInstaImages = _get(data, 'allInstagramContent.edges');
 
     setImages(_get(data, 'allInstagramContent.edges'));    
-    //setImages(_get(data, 'allInstaNode.edges'));
   },[])
 
   let isMobileResize = 0;
@@ -64,13 +45,6 @@ export default function Gallery() {
       isMobileResize = window.innerWidth <576;
     }
   }
-/*
-  this.state = {
-    items: Array.from({length:10}),
-    hasMore: true
-
-  };
-*/
 
   const fetchMoreData = () => {
 /*
