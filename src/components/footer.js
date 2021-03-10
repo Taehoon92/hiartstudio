@@ -36,7 +36,7 @@ const Footer = ({ siteTitle }) => (
                 <div className="footer-box col-md-3">
                     <a href="tel:0400123456">
                         <FontAwesomeIcon icon = {faPhoneAlt} />
-                        <span>&nbsp;&nbsp;0400 123 456</span>
+                        <span>&nbsp;&nbsp;0405 068 004</span>
                     </a>
                     <span className="footer-sns">
                         <a href="https://www.instagram.com/hiartstudiobrisbane/" target="_blank">
